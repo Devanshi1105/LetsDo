@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
+             x:Class="LetsCookApp.Views.SubCategoryView">
+
+    <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
+                <ContentView HorizontalOptions="Start" VerticalOptions="Start">
+                    <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </ContentView>
+                <local:CustomLabelLight Text="Seafood" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  />
+                <ContentView HorizontalOptions="Start" VerticalOptions="End">
+                    <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
+                  <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Search_Tapped"/>
+                  </ContentView.GestureRecognizers>
+                </ContentView>
+            </StackLayout>
+
+            <local:CustomListView x:Name="listSubCatgory" HasUnevenRows="True" RowHeight="-1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None"  BackgroundColor="Transparent">
+                <local:CustomListView.ItemTemplate>
+                    <DataTemplate>
+                        <local:CustomListViewCell>
+                            <local:CustomListViewCell.View>
+                                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="30"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                        <RowDefinition Height="50"/>
+                                        <RowDefinition Height="50"/>
+                                        <RowDefinition Height="20"/>
+                                    </Grid.RowDefinitions>
+                                    <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Aspect="AspectFill" Source="shrimp" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <Image Grid.Column="1" Grid.Row="1"  Aspect="AspectFit" Source="snapper" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+
+                                    <Grid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="Black" Opacity=".1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="30"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <local:CustomLabelLight Grid.Column="0" Grid.Row="0" Text="{Binding DishName}" TextColor="#ffffff" FontSize="14" HorizontalOptions="Start" VerticalOptions="End"  />
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0">
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                                                <Image Aspect="AspectFit" Source="time" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="8" WidthRequest="8"/>
+                                                <local:CustomLabelLight Text="{Binding Time}" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                                                <Image Aspect="AspectFit" Source="serving" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="8" WidthRequest="8"/>
+                                                <local:CustomLabelLight Text="{Binding Servings}" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                                                <Image Aspect="AspectFit" Source="ingredients" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="8" WidthRequest="8"/>
+                                                <local:CustomLabelLight Text="{Binding Ingrendients}" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <Image Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"  Aspect="AspectFit" Source="expand" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    </Grid>
+                                </Grid>
+                            </local:CustomListViewCell.View>
+                        </local:CustomListViewCell>
+                    </DataTemplate>
+                </local:CustomListView.ItemTemplate>
+            </local:CustomListView>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
+             x:Class="LetsCookApp.Views.SignUpView" BackgroundColor="White" BackgroundImage="back.png">
+    
+    <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <ContentView HorizontalOptions="Start" VerticalOptions="Start">
+                    <Image Source="cross" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </ContentView>
+                <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+                    <local:CustomLabelLight Text="Sing In" TextColor="#ffffff" FontSize="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"  />
+                </ContentView>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0,50,0,0">
+                <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Image x:Name="whtlock1" Source="letscook.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="90" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="15,0" Padding="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="1"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="1"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Email" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Username" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+            </Grid>
+            <local:CustomButtonRegular  Text="CREATE MY ACCOUNT" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,10,15,20" Clicked="Categories_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
