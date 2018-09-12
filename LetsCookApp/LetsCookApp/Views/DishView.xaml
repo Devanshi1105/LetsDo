@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
+             x:Class="LetsCookApp.Views.DishView" >
+
+
+    <ScrollView  HorizontalOptions="Fill" VerticalOptions="Fill">
+        <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
+                <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+                    <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+                  <ContentView.GestureRecognizers>
+                    <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
+                  </ContentView.GestureRecognizers>
+                </ContentView>
+                <local:CustomLabelLight Text="Categories" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+                <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
+                    <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
+                  
+                  <ContentView.GestureRecognizers>
+                    <!--<TapGestureRecognizer Tapped="Search_Tapped"/>-->
+                  </ContentView.GestureRecognizers>
+                </ContentView>
+            </StackLayout>
+
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" BackgroundColor="Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <StackLayout  Grid.Row="0" Orientation="Horizontal" Spacing="5" HeightRequest="30">
+                        <Label Text="Test1" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                        <Label Text="Test2" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                        <Label Text="Test3" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+
+                    <Image Grid.Row="1" HeightRequest="60" WidthRequest="100" Source="you_tab.png" Aspect="AspectFit" />
+                    <Image  Grid.Row="1"  TranslationX="130" VerticalOptions="End" HeightRequest="30" WidthRequest="30" Source="plus.png" />
+
+
+                    <local:CustomListView BackgroundColor="Red" Grid.Row="2" x:Name="lst1" HasUnevenRows="True" ItemTapped="lst1_ItemTapped">
+                        <local:CustomListView.ItemTemplate>
+                            <DataTemplate>
+                                <local:CustomListViewCell>
+                                    <local:CustomListViewCell.View>
+                                        <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding imgsource}" HeightRequest="30" WidthRequest="50" HorizontalOptions="Start"/>
+                                        <StackLayout Orientation="Vertical">
+                                            <Label Text="{Binding Name}" Font="18"/>
+                                            <!--<Label Text="{Binding Num}" TextColor="Gray"/>-->
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                    </local:CustomListViewCell.View>
+                                </local:CustomListViewCell>
+                            </DataTemplate>
+                        </local:CustomListView.ItemTemplate>
+                    </local:CustomListView>
+
+                    <Button Grid.Row="3" Text="Test" TextColor="Black" BackgroundColor="Red"   VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                </Grid>
+
+                <Grid Grid.Row="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="Abcdefgh" BackgroundColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+                    <ListView Grid.Row="1" x:Name="lst2" HasUnevenRows="True" ItemTapped="lst2_ItemTapped">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding imgsource}" HeightRequest="30" WidthRequest="50" HorizontalOptions="Start"/>
+
+                                        <StackLayout Orientation="Vertical">
+                                            <Label Text="{Binding Name}" Font="18"/>
+                                            <!--<Label Text="{Binding Num}" TextColor="Gray"/>-->
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <StackLayout  Grid.Row="2" Orientation="Horizontal" Spacing="5">
+                        <Button Text="Test1" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="Test2" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

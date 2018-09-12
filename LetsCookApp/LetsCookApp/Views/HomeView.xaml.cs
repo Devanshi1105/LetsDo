@@ -17,7 +17,7 @@ namespace LetsCookApp.Views
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-           // BindingContext = App.AppInSetup.HomeViewModel;
+            BindingContext = App.AppSetup.HomeViewModel;
 
             var menupage = masterMenuPage;
             Master = menupage;
@@ -29,14 +29,19 @@ namespace LetsCookApp.Views
             };
 
            
-            //this.SetBinding(MasterDetailPage.IsPresentedProperty, "IsMenuListPresented");
+            this.SetBinding(MasterDetailPage.IsPresentedProperty, "IsMenuListPresented");
             //this.IsPresentedChanged += HomeView_IsPresentedChanged;
+
+           // void HomeView_IsPresentedChanged(object sender, EventArgs e)
+            //{
+              //  App.AppSetup.HomeViewModel.IsMenuListPresented = ((MasterDetailPage)sender).IsPresented;
+            //}
         }
         #region first
         // TODO: Set the navigation menu at the runtime.      
         void NavigateTo(ViewModels.Menu menu)
         {
-            if (menu.TargetType == typeof(SearchView))
+            if (menu.TargetType == typeof(CategoriesView))
             {
                 Detail.Navigation.PopToRootAsync();
             }

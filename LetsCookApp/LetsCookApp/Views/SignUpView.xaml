@@ -11,7 +11,10 @@
                     <Image Source="cross" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </ContentView>
                 <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center">
-                    <local:CustomLabelLight Text="Sing In" TextColor="#ffffff" FontSize="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"  />
+                    <local:CustomLabelLight Text="Sign In" TextColor="#ffffff" FontSize="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"  />
+                  <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SignIn_Tapped" />
+                  </ContentView.GestureRecognizers>
                 </ContentView>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0,50,0,0">
@@ -35,7 +38,7 @@
                 <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                 <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
             </Grid>
-            <local:CustomButtonRegular  Text="CREATE MY ACCOUNT" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,10,15,20" Clicked="Categories_Clicked"/>
+            <local:CustomButtonRegular  Text="CREATE MY ACCOUNT" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,10,15,20" Clicked="Create_Clicked"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

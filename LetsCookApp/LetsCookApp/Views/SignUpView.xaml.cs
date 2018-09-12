@@ -18,9 +18,13 @@ namespace LetsCookApp.Views
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void Categories_Clicked(object sender, EventArgs e)
+        private void Create_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CategoriesView());
+        }
+        private void SignIn_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SignInView());
         }
     }
 }

@@ -18,7 +18,7 @@ namespace LetsCookApp.Views
 
         private void Create_Clicked(object sender, EventArgs e)
         {
-             Navigation.PushAsync(new SignInView());
+             Navigation.PushAsync(new SignUpView());
         }
 
         private void HomeMaster_Clicked(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace LetsCookApp.Views
         }
         private void Signin_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CategoriesView());
+            Navigation.PushAsync(new SignInView());
         }
     }
 }

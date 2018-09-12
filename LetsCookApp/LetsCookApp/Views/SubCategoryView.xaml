@@ -6,7 +6,7 @@
 
     <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
         <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
+            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
                 <ContentView HorizontalOptions="Start" VerticalOptions="Start">
                     <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </ContentView>
@@ -17,9 +17,25 @@
                     <TapGestureRecognizer Tapped="Search_Tapped"/>
                   </ContentView.GestureRecognizers>
                 </ContentView>
-            </StackLayout>
+            </StackLayout>-->
+          <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
+            <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+              <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+              <ContentView.GestureRecognizers>
+                <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
+              </ContentView.GestureRecognizers>
+            </ContentView>
+            <local:CustomLabelLight Text="Seafood" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+            <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
+              <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
-            <local:CustomListView x:Name="listSubCatgory" HasUnevenRows="True" RowHeight="-1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None"  BackgroundColor="Transparent">
+              <ContentView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Search_Tapped"/>
+              </ContentView.GestureRecognizers>
+            </ContentView>
+          </StackLayout>
+
+          <local:CustomListView x:Name="listSubCatgory" ItemSelected ="listSubCatgory_ItemSelected" HasUnevenRows="True" RowHeight="-1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None"  BackgroundColor="Transparent">
                 <local:CustomListView.ItemTemplate>
                     <DataTemplate>
                         <local:CustomListViewCell>

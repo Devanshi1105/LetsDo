@@ -2,41 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
-             x:Class="LetsCookApp.Views.MenuView" Title="Menu" BackgroundColor="Green">
+             x:Class="LetsCookApp.Views.MenuView" Title="Menu" BackgroundColor="#E55932">
 
     <StackLayout x:Name="MainStack"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-        <StackLayout BackgroundColor="#e71096" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-            <BoxView HeightRequest="1" BackgroundColor="#ffffff" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
-            <local:CustomLabelRegular Text="Home" TextColor="#ffffff" FontSize="18" HeightRequest="35"  VerticalOptions="Center" HorizontalOptions="Start" Margin="20,3"/>
-            <BoxView HeightRequest="1" BackgroundColor="#ffffff" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Padding="0,50">
+            <Image Source="icon.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="50"/>
             <local:CustomListView x:Name="masterMenuList" ItemsSource="{Binding MenuItemList}" ItemTapped="masterMenuList_ItemTapped" RowHeight="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None" BackgroundColor="Transparent" >
                 <local:CustomListView.ItemTemplate>
                     <DataTemplate>
                         <local:CustomListViewCell>
                             <local:CustomListViewCell.View>
-                                <Grid BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,0,0">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="40" />
-                                        <RowDefinition Height="1" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="20"/>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="20"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Source="{Binding Icon}" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" />
-                                    <local:CustomLabelRegular Text="{Binding Title}" Grid.Row="0" TextColor="#ffffff" FontSize="18" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
-                                    <Image Source="{StaticResource arrow}" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
-                                    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest=".5" BackgroundColor="#ffffff" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                                </Grid>
+                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                                    <local:CustomLabelRegular Text="{Binding Title}" Grid.Row="0" TextColor="#ffffff" FontSize="18" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" />
+                                </StackLayout>
                             </local:CustomListViewCell.View>
                         </local:CustomListViewCell>
                     </DataTemplate>
                 </local:CustomListView.ItemTemplate>
             </local:CustomListView>
-
-           
+            
         </StackLayout>
+        <BoxView BackgroundColor="#ffffff" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="30"/>
     </StackLayout>
 
 </ContentPage>

@@ -20,8 +20,6 @@ namespace LetsCookApp.Views
         }
 
         private void masterMenuList_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-
-        }
+         => ((ListView)sender).SelectedItem = null;
     }
 }

@@ -22,5 +22,11 @@ namespace LetsCookApp.Views
         {
              Navigation.PushAsync(new SignUpView());
         }
+        private void SignIn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CategoriesView());
+        }
+
+        
     }
 }

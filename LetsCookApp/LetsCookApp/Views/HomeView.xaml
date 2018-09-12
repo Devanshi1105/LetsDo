@@ -7,7 +7,7 @@
     <MasterDetailPage.Detail>
         <NavigationPage BarBackgroundColor="White">
             <x:Arguments>
-                <local:SearchView />
+                <local:CategoriesView />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

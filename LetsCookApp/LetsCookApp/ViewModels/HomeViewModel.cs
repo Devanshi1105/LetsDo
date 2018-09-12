@@ -1,4 +1,4 @@
-﻿using LetsCookApp.Views;
+﻿//using LetsCookApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +15,11 @@ namespace LetsCookApp.ViewModels
             IsMenuListPresented = false;
             _menuItemList = new List<Menu>()
             {
-                new Menu {Title = "Tessera Thinkard", Icon = "card.png", TargetType = typeof(SearchView)},
-                new Menu {Title = "Movimenti", Icon = "movement.png", TargetType = typeof(CategoriesView)},
-                new Menu {Title = "Punti Vendita", Icon = "store.png", TargetType = typeof(SearchView)},
+                //new Menu {Title = "Categories",  TargetType = typeof(SearchView)},
+                //new Menu {Title = "Shopping List", TargetType = typeof(CategoriesView)},
+                //new Menu {Title = "Promotions", TargetType = typeof(SearchView)},
+                //new Menu {Title = "About the App",  TargetType = typeof(SearchView)},
+                //new Menu {Title = "Settings",  TargetType = typeof(SearchView)},
             };
             RaisePropertyChanged(() => MenuItemList);
         }
@@ -51,8 +53,7 @@ namespace LetsCookApp.ViewModels
 
     public class Menu
     {
-        public string Title { get; set; }
-        public ImageSource Icon { get; set; }
+        public string Title { get; set; }     
         public Type TargetType { get; set; }
     }
 }

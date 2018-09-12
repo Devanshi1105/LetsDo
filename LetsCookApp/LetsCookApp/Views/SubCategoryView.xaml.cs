@@ -33,7 +33,14 @@ namespace LetsCookApp.Views
         {
             Navigation.PushAsync(new SearchView());
         }
-
+        private void listSubCatgory_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                // var item = (Result)e.SelectedItem;
+                Navigation.PushAsync(new DishView());
+            }
+        }
 
     }
  

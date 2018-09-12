@@ -37,7 +37,7 @@
                 <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
                
             </Grid>
-            <local:CustomButtonRegular  Text="SIGN IN" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,10,15,20"/>
+            <local:CustomButtonRegular  Text="SIGN IN" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center"  Margin="15,10,15,20" Clicked="SignIn_Clicked"/>
             <ContentView  HorizontalOptions="Center" VerticalOptions="Start">
                 <local:CustomLabelRegular Text="Forgot Password?" TextColor="#ffffff" FontSize="16"   HorizontalOptions="Center" VerticalOptions="Center"/>
             </ContentView>
