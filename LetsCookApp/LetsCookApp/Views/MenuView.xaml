@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
-             x:Class="LetsCookApp.Views.MenuView" Title="Menu" BackgroundColor="#E55932">
+             x:Class="LetsCookApp.Views.MenuView" Title="Menu" BackgroundColor="#e74c3c">
 
     <StackLayout x:Name="MainStack"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Padding="0,50">
-            <Image Source="icon.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="50"/>
+            <Image Source="cooking.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="50"/>
             <local:CustomListView x:Name="masterMenuList" ItemsSource="{Binding MenuItemList}" ItemTapped="masterMenuList_ItemTapped" RowHeight="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None" BackgroundColor="Transparent" >
                 <local:CustomListView.ItemTemplate>
                     <DataTemplate>
@@ -22,7 +22,9 @@
             </local:CustomListView>
             
         </StackLayout>
-        <BoxView BackgroundColor="#ffffff" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="30"/>
+      <local:CustomButtonRegular  Text="SIGN OUT" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center"  Margin="15,10,15,20" />
+
+      <!--<BoxView BackgroundColor="#ffffff" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="30"/>-->
     </StackLayout>
 
 </ContentPage>

@@ -17,10 +17,10 @@
                   </ContentView.GestureRecognizers>
                 </ContentView>
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0,50,0,0">
-                <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Image x:Name="whtlock1" Source="letscook.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="90" HorizontalOptions="Center" VerticalOptions="Center"/>
-            </StackLayout>
+          <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand" Spacing="0" VerticalOptions="Center" Margin="0,120,0,0">
+            <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            <Image x:Name="whtlock1" Source="letscook.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="200"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+          </StackLayout>
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="15,0" Padding="8">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

@@ -34,7 +34,7 @@ namespace LetsCookApp.Droid.Renderer
                 //   textView.SetHeight(80);
                 
 
-                //textView.Background = null;
+                textView.Background = null;
                 // textView.Gravity = GravityFlags.CenterVertical;
                 // do whatever you want to the textField here!
                 // Control.SetBackgroundColor(global::Android.Graphics.Color.Transparent);

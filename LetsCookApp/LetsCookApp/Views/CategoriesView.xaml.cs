@@ -24,7 +24,7 @@ namespace LetsCookApp.Views
         }
         private void Menu_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MenuView());
+           // Navigation.PushAsync(new HomeView());
         }
         private void Search_Tapped(object sender, EventArgs e)
         {

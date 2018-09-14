@@ -15,21 +15,21 @@
                     <ContentView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="CreateAccount_Tapped" />
                     </ContentView.GestureRecognizers>
-                </ContentView>
+                </ContentView> 
                
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0,120,0,0">
-                <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="80" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Image x:Name="whtlock1" Source="letscook.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="200" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand" Spacing="0" VerticalOptions="Center" Margin="0,120,0,0">
+                <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <Image x:Name="whtlock1" Source="letscook.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="200"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
             </StackLayout>
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="15,0" Padding="8">
+             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="15,0" Padding="8">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="1"/>
-                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="50"/>
                     
                 </Grid.RowDefinitions>
                 <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Username" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>

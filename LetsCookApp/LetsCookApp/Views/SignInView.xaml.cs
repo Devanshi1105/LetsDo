@@ -24,7 +24,8 @@ namespace LetsCookApp.Views
         }
         private void SignIn_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CategoriesView());
+             App.Current.MainPage = new Views.HomeView();
+          
         }
 
         

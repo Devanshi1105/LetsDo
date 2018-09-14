@@ -19,14 +19,14 @@ namespace LetsCookApp.Views
             NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = App.AppSetup.HomeViewModel;
 
-            var menupage = masterMenuPage;
-            Master = menupage;
+            //var menupage = masterMenuPage;
+            //Master = menupage;
 
-            masterMenuPage.menuList.ItemTapped += (sender, e) =>
-            {
-                if (e.Item == null) return;
-                NavigateTo(e.Item as ViewModels.Menu);
-            };
+            //masterMenuPage.menuList.ItemTapped += (sender, e) =>
+            //{
+            //    if (e.Item == null) return;
+            //    NavigateTo(e.Item as ViewModels.Menu);
+            //};
 
            
             this.SetBinding(MasterDetailPage.IsPresentedProperty, "IsMenuListPresented");

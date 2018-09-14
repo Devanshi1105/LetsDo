@@ -4,15 +4,14 @@
                   xmlns:local="clr-namespace:LetsCookApp.Views;assembly=LetsCookApp"
                   x:Class="LetsCookApp.Views.HomeView" Title="Home" BackgroundColor="White">
 
-    <MasterDetailPage.Detail>
-        <NavigationPage BarBackgroundColor="White">
-            <x:Arguments>
-                <local:CategoriesView />
-            </x:Arguments>
-        </NavigationPage>
-    </MasterDetailPage.Detail>
-    <MasterDetailPage.Master>
-        <local:MenuView x:Name="masterMenuPage"/>
-    </MasterDetailPage.Master>
-
+  <MasterDetailPage.Master>
+    <local:MenuView />
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <local:CategoriesView />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
 </MasterDetailPage>

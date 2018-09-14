@@ -1,4 +1,5 @@
 ﻿//using LetsCookApp.Views;
+using LetsCookApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,11 @@ namespace LetsCookApp.ViewModels
             IsMenuListPresented = false;
             _menuItemList = new List<Menu>()
             {
-                //new Menu {Title = "Categories",  TargetType = typeof(SearchView)},
-                //new Menu {Title = "Shopping List", TargetType = typeof(CategoriesView)},
-                //new Menu {Title = "Promotions", TargetType = typeof(SearchView)},
-                //new Menu {Title = "About the App",  TargetType = typeof(SearchView)},
-                //new Menu {Title = "Settings",  TargetType = typeof(SearchView)},
+                new Menu {Title = "Categories",  TargetType = typeof(CategoriesView)},
+                new Menu {Title = "Shopping List", TargetType = typeof(CategoriesView)},
+                new Menu {Title = "Promotions", TargetType = typeof(SearchView)},
+                new Menu {Title = "About the App",  TargetType = typeof(SearchView)},
+                new Menu {Title = "Settings",  TargetType = typeof(SearchView)},
             };
             RaisePropertyChanged(() => MenuItemList);
         }

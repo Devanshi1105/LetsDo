@@ -23,74 +23,82 @@
                 </ContentView>
             </StackLayout>
 
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+          <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-                <Grid Grid.Column="0" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Aspect="AspectFill" Source="seafood" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-                    <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                        <local:CustomLabelLight Text="Seafood" TextColor="#ffffff" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"  />
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                            <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="10" WidthRequest="10"/>
-                            <local:CustomLabelLight Text="223 Recipes" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"  />
-                        </StackLayout>
-                    </StackLayout>
-                    <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="SubCategories_Tapped"/>
-                    </Grid.GestureRecognizers>
-                </Grid>
-                <Grid Grid.Column="0" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="poultry" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-                    <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                        <local:CustomLabelLight Text="Poultry" TextColor="#ffffff" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"  />
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                            <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="10" WidthRequest="10"/>
-                            <local:CustomLabelLight Text="218 Recipes" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"  />
-                        </StackLayout>
-                    </StackLayout>
-                </Grid>
-                <Grid Grid.Column="0" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="meats" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-                    <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                        <local:CustomLabelLight Text="Meats" TextColor="#ffffff" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"  />
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                            <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="10" WidthRequest="10"/>
-                            <local:CustomLabelLight Text="198 Recipes" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"  />
-                        </StackLayout>
-                    </StackLayout>
-                </Grid>
+            <Grid Grid.Column="0" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Aspect="AspectFill" Source="seafood" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+              <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                <local:CustomLabelLight Text="Seafood" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                  <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="25" WidthRequest="25"/>
+                  <local:CustomLabelLight Text="223 Recipes" TextColor="#ffffff" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"  />
+                </StackLayout>
+              </StackLayout>
+              <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="SubCategories_Tapped"/>
+              </Grid.GestureRecognizers>
             </Grid>
+            <Grid Grid.Column="0" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="poultry" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+              <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                <local:CustomLabelLight Text="Poultry" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                  <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="25" WidthRequest="25"/>
+                  <local:CustomLabelLight Text="218 Recipes" TextColor="#ffffff" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"  />
+                </StackLayout>
+              </StackLayout>
+              <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="SubCategories_Tapped"/>
+              </Grid.GestureRecognizers>
+            </Grid>
+            <Grid Grid.Column="0" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="meats" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+              <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                <local:CustomLabelLight Text="Meats" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                  <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="25" WidthRequest="25"/>
+                  <local:CustomLabelLight Text="198 Recipes" TextColor="#ffffff" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"  />
+                </StackLayout>
+              </StackLayout>
+              <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="SubCategories_Tapped"/>
+              </Grid.GestureRecognizers>
+            </Grid>
+            
+          </Grid>
+
 
         </StackLayout>
     </ScrollView>
