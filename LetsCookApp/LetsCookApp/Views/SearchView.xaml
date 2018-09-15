@@ -12,6 +12,9 @@
       <local:CustomLabelLight Text="Search" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  />
       <ContentView HorizontalOptions="Start" VerticalOptions="Center">
         <Image Source="close" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <ContentView.GestureRecognizers>
+          <TapGestureRecognizer Tapped="Search_Tapped"/>
+        </ContentView.GestureRecognizers>
       </ContentView>
     </StackLayout>
     <SearchBar Placeholder="What would you like to cook?" TextColor="Black" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>

@@ -17,7 +17,7 @@
                                 </StackLayout>
                             </local:CustomListViewCell.View>
                         </local:CustomListViewCell>
-                    </DataTemplate>
+                    </DataTemplate> 
                 </local:CustomListView.ItemTemplate>
             </local:CustomListView>
             

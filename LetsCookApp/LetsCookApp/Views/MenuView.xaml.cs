@@ -30,9 +30,9 @@ namespace LetsCookApp.Views
             {
                 ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PopToRootAsync();
             }
-            else if (menu.TargetType == typeof(SignInView))
+            else if (menu.TargetType == typeof(ShoppingListView))
             {
-                 ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new SignInView());
+                 ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new ShoppingListView());
             }
             else if (menu.TargetType == typeof(SignUpView))
             {

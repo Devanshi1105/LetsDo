@@ -6,48 +6,79 @@
 
 
     <ScrollView  HorizontalOptions="Fill" VerticalOptions="Fill">
-        <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
-                <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
-                    <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
-                  <ContentView.GestureRecognizers>
-                    <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
-                  </ContentView.GestureRecognizers>
-                </ContentView>
-                <local:CustomLabelLight Text="Categories" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
-                <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
-                    <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
-                  
-                  <ContentView.GestureRecognizers>
-                    <!--<TapGestureRecognizer Tapped="Search_Tapped"/>-->
-                  </ContentView.GestureRecognizers>
-                </ContentView>
-            </StackLayout>
+        <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
+         
+              <Grid  BackgroundColor="Black"  HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" >
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*"/>
+                 
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*"/>
+                  <RowDefinition Height="*"/>
+                 
+                </Grid.RowDefinitions>
 
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="1">
+                <StackLayout  Grid.Column="0"  Grid.Row="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
+                  <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+                    <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <ContentView.GestureRecognizers>
+                      <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
+                    </ContentView.GestureRecognizers>
+                  </ContentView>
+                  <local:CustomLabelLight Text="Pan Seared Red Snapper" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+                  <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
+                    <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                    <ContentView.GestureRecognizers>
+                      <TapGestureRecognizer Tapped="Search_Tapped"/>
+                    </ContentView.GestureRecognizers>
+                  </ContentView>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand"  BackgroundColor="Black" VerticalOptions="Center" Margin="10,0">
+                  <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Aspect="AspectFit" Source="time" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+                    <local:CustomLabelLight Text="15 min" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                  </StackLayout>
+                  <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Aspect="AspectFit" Source="serving" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+                    <local:CustomLabelLight Text="4 Servings" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                  </StackLayout>
+                  <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Aspect="AspectFit" Source="ingredients" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+                    <local:CustomLabelLight Text="7 Ingrendients" TextColor="#ffffff" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                  </StackLayout>
+                </StackLayout>
+
+              </Grid>
+            
+           
+
+            <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="FillAndExpand" RowSpacing="1" Padding="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
+                  <RowDefinition Height="50" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <Grid Grid.Row="0" BackgroundColor="Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid Grid.Row="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="30" />
+                       
                         <RowDefinition Height="150" />
+                      <RowDefinition Height="30" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <StackLayout  Grid.Row="0" Orientation="Horizontal" Spacing="5" HeightRequest="30">
-                        <Label Text="Test1" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
-                        <Label Text="Test2" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
-                        <Label Text="Test3" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
-                    </StackLayout>
+                  
+                
+                    <Image Grid.Row="0" HeightRequest="60" HorizontalOptions="FillAndExpand"  Source="snapper.png" Aspect="AspectFill" />
+                    <Image  Grid.Row="0"  TranslationX="130"  VerticalOptions="End" HeightRequest="30" WidthRequest="30" Source="expand.png" />
 
-                    <Image Grid.Row="1" HeightRequest="60" WidthRequest="100" Source="you_tab.png" Aspect="AspectFit" />
-                    <Image  Grid.Row="1"  TranslationX="130" VerticalOptions="End" HeightRequest="30" WidthRequest="30" Source="plus.png" />
-
-
-                    <local:CustomListView BackgroundColor="Red" Grid.Row="2" x:Name="lst1" HasUnevenRows="True" ItemTapped="lst1_ItemTapped">
+                  <ContentView Grid.Row="1" BackgroundColor="#f0eff5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                  <Label  Text="INGREDIENTS" TextColor="#e74c3c"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
+                  </ContentView>
+                  <local:CustomListView BackgroundColor="White" Grid.Row="2" x:Name="lst1" HasUnevenRows="True" ItemTapped="lst1_ItemTapped">
                         <local:CustomListView.ItemTemplate>
                             <DataTemplate>
                                 <local:CustomListViewCell>
@@ -66,18 +97,22 @@
                         </local:CustomListView.ItemTemplate>
                     </local:CustomListView>
 
-                    <Button Grid.Row="3" Text="Test" TextColor="Black" BackgroundColor="Red"   VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
                 </Grid>
+              
+                    <Button Grid.Row="1" Text="ADD TO SHOPPING LIST" TextColor="White" BackgroundColor="#ca4334"   VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+               
 
-                <Grid Grid.Row="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid Grid.Row="2" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
-                    <Label Grid.Row="0" Text="Abcdefgh" BackgroundColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-
+                  <ContentView Grid.Row="0" BackgroundColor="#f0eff5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                    <Label  Text="PREPARATION" TextColor="#e74c3c"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
+                  </ContentView>
+                    
                     <ListView Grid.Row="1" x:Name="lst2" HasUnevenRows="True" ItemTapped="lst2_ItemTapped">
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -96,8 +131,8 @@
                     </ListView>
 
                     <StackLayout  Grid.Row="2" Orientation="Horizontal" Spacing="5">
-                        <Button Text="Test1" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
-                        <Button Text="Test2" TextColor="Black" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="EMAIL" TextColor="White" BackgroundColor="#ca4334" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="WATCH VIDEO" TextColor="White" BackgroundColor="#ca4334" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
                     </StackLayout>
                 </Grid>
             </Grid>

@@ -17,5 +17,9 @@ namespace LetsCookApp.Views
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+        private void Search_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PopToRootAsync();
+        }
     }
 }
