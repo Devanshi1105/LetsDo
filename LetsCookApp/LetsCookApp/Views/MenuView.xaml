@@ -12,7 +12,8 @@
                     <DataTemplate>
                         <local:CustomListViewCell>
                             <local:CustomListViewCell.View>
-                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Center">
+                                  <Image Source="cooking.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30"/>
                                     <local:CustomLabelRegular Text="{Binding Title}" Grid.Row="0" TextColor="#ffffff" FontSize="18" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" />
                                 </StackLayout>
                             </local:CustomListViewCell.View>

@@ -16,11 +16,16 @@ namespace LetsCookApp.ViewModels
             IsMenuListPresented = false;
             _menuItemList = new List<Menu>()
             {
-                new Menu {Title = "Categories",  TargetType = typeof(CategoriesView)},
-                new Menu {Title = "Shopping List", TargetType = typeof(ShoppingListView)},
-                new Menu {Title = "Promotions", TargetType = typeof(SearchView)},
-                new Menu {Title = "About the App",  TargetType = typeof(SearchView)},
+                  new Menu {Title = "My Profile",  TargetType = typeof(CategoriesView)},
+                    new Menu {Title = "Newly Added Recipes",  TargetType = typeof(CategoriesView)},
+                      new Menu {Title = "Categories",  TargetType = typeof(CategoriesView)},
+                        new Menu {Title = "My Favourites Recipes",  TargetType = typeof(CategoriesView)},
+                          new Menu {Title = "Shopping List",  TargetType = typeof(ShoppingListView)},
+                new Menu {Title = "Suggest Recipes",  TargetType = typeof(CategoriesView)},
+                new Menu {Title = "Please Help Me", TargetType = typeof(ShoppingListView)},
+                new Menu {Title = "About the App", TargetType = typeof(SearchView)},
                 new Menu {Title = "Settings",  TargetType = typeof(SearchView)},
+                new Menu {Title = "ShareApp",  TargetType = typeof(SearchView)},
             };
             RaisePropertyChanged(() => MenuItemList);
         }
