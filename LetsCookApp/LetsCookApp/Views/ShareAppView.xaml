@@ -1,6 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
              x:Class="LetsCookApp.Views.ShareAppView">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+    <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="0" BackgroundColor="Black">
+        <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+          <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+          <ContentView.GestureRecognizers>
+            <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
+          </ContentView.GestureRecognizers>
+        </ContentView>
+        <local:CustomLabelLight Text="Share App" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+        <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
+          <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+          <ContentView.GestureRecognizers>
+            <!--<TapGestureRecognizer Tapped="Search_Tapped"/>-->
+          </ContentView.GestureRecognizers>
+        </ContentView>
+      </StackLayout>
+      <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" BackgroundColor="#BC3F33"  Spacing="0" VerticalOptions="FillAndExpand" Margin="0,0,0,0">
+        <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+        <local:CustomLabelRegular Text="Invite friend and both of you will get exciting  " TextColor="White" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <local:CustomLabelRegular Text="Offer of Home Made Food App." TextColor="White" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        
+        <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand"  Spacing="0" VerticalOptions="FillAndExpand" Margin="0,20,0,0">
+         
+          <local:CustomLabelRegular Text="Share your code" TextColor="White" FontSize="12" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
+          </local:CustomLabelRegular>
+         
+          <local:CustomLabelRegular Text="HMF12432" TextColor="White" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+          </local:CustomLabelRegular>
+
+        </StackLayout>
+      </StackLayout>
+      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Padding="8">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"/>
+          <ColumnDefinition Width="100"/>
+          <ColumnDefinition Width="100"/>
+          <ColumnDefinition Width="100"/>
+          <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="20"/>
+          <RowDefinition Height="100"/>
+          <RowDefinition Height="20"/>
+          <RowDefinition Height="100"/>
+          <RowDefinition Height="20"/>
+
+        </Grid.RowDefinitions>
+        <local:CustomLabelRegular Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Text="Share to your friend by using these" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <Image  Source="icon.png" Grid.Column="1"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="icon.png" Grid.Column="2"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="icon.png" Grid.Column="3"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+        <local:CustomLabelRegular Grid.Column="1"  Grid.Row="2" Text="Facebook" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+         <local:CustomLabelRegular Grid.Column="2"  Grid.Row="2" Text="Twitter" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <local:CustomLabelRegular Grid.Column="3"  Grid.Row="2" Text="GooglePlus" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <Image  Source="icon.png" Grid.Column="1"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="icon.png" Grid.Column="2"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="icon.png" Grid.Column="3"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+        <local:CustomLabelRegular Grid.Column="1"  Grid.Row="4" Text="Line" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <local:CustomLabelRegular Grid.Column="2"  Grid.Row="4" Text="Whatsapp" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <local:CustomLabelRegular Grid.Column="3"  Grid.Row="4" Text="SMS" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+      </Grid>
+        </StackLayout>
+  </ScrollView>
 </ContentPage>

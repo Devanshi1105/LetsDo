@@ -30,17 +30,45 @@ namespace LetsCookApp.Views
             {
                 ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PopToRootAsync();
             }
-            else if (menu.TargetType == typeof(ShoppingListView))
+            else if (menu.TargetType == typeof(MyProfileView))
             {
-                 ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new ShoppingListView());
+                 ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new MyProfileView());
+            }
+            else if (menu.TargetType == typeof(NewlyAddedRecipes))
+            {
+                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new NewlyAddedRecipes());
             }
             else if (menu.TargetType == typeof(PopularReceipesView))
             {
                 ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new PopularReceipesView());
             }
-            else if (menu.TargetType == typeof(SignUpView))
+            else if (menu.TargetType == typeof(MyFavouritesRecipesView))
             {
-                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new SignUpView());
+                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new MyFavouritesRecipesView());
+            }
+            else if (menu.TargetType == typeof(ShoppingListView))
+            {
+                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new ShoppingListView());
+            }
+            else if (menu.TargetType == typeof(SuggestRecipesView))
+            {
+                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new SuggestRecipesView());
+            }
+            else if (menu.TargetType == typeof(HelpMeView))
+            {
+                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new HelpMeView());
+            }
+            else if (menu.TargetType == typeof(AboutUsView))
+            {
+                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new AboutUsView());
+            }
+            else if (menu.TargetType == typeof(SettingsView))
+            {
+                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new SettingsView());
+            }
+            else if (menu.TargetType == typeof(ShareAppView))
+            {
+                ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new ShareAppView());
             }
 
             else if (menu.TargetType == typeof(Nullable))

@@ -3,86 +3,88 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
              x:Class="LetsCookApp.Views.PopularReceipesView">
-  <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-   
-    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
-      <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
-        <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
-        <ContentView.GestureRecognizers>
-          <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
-        </ContentView.GestureRecognizers>
-      </ContentView>
-      <local:CustomLabelLight Text="Popular Receipes" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
-      
-    </StackLayout>
+  <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+    <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-    <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-      <local:CustomListView x:Name="listSubCatgory"   HasUnevenRows="True" RowHeight="-1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None"  BackgroundColor="White">
-        <local:CustomListView.ItemTemplate>
-          <DataTemplate>
-            <local:CustomListViewCell>
-              <local:CustomListViewCell.View>
-                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                  <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                   
-                  </Grid.ColumnDefinitions>
-                  <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="100"/>
-                    
-                  </Grid.RowDefinitions>
-                  <Image Grid.Column="0" Grid.Row="0"  Grid.RowSpan="3" Aspect="AspectFill" Source="{Binding foodIcon}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-                  
-                  <Grid  Grid.Row="3" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="White">
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
+        <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+          <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+          <ContentView.GestureRecognizers>
+            <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
+          </ContentView.GestureRecognizers>
+        </ContentView>
+        <local:CustomLabelLight Text="Popular Recipes" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+
+      </StackLayout>
+
+      <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <local:CustomListView x:Name="listSubCatgory"   HasUnevenRows="True" RowHeight="-1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None"  BackgroundColor="White">
+          <local:CustomListView.ItemTemplate>
+            <DataTemplate>
+              <local:CustomListViewCell>
+                <local:CustomListViewCell.View>
+                  <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                     <Grid.ColumnDefinitions>
-                      <ColumnDefinition Width="200"/>
-                      <ColumnDefinition Width="200"/>
-                      <ColumnDefinition Width="200"/>
+                      <ColumnDefinition Width="*"/>
+
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                      <RowDefinition Height="*"/>
-                      <RowDefinition Height="*"/>
-                      <RowDefinition Height="*"/>
+                      <RowDefinition Height="50"/>
+                      <RowDefinition Height="50"/>
+                      <RowDefinition Height="50"/>
+                      <RowDefinition Height="100"/>
+
                     </Grid.RowDefinitions>
-                    <local:CustomLabelLight Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Text="{Binding DishName}" FontAttributes="Bold" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0"  />
-                    <StackLayout  Grid.Row="1" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White"  VerticalOptions="Center" Margin="10,0">
-                      <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center">
-                        <local:CustomLabelLight Text="Ratings" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
-                      </StackLayout>
-                      <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center">
-                        <Image Aspect="AspectFit" Source="like" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
-                        <local:CustomLabelLight Text="453" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
-                      </StackLayout>
-                      <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                        <Image Aspect="AspectFit" Source="share" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
-                        <local:CustomLabelLight Text="45" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
-                      </StackLayout>
-                    </StackLayout>
+                    <Image Grid.Column="0" Grid.Row="0"  Grid.RowSpan="3" Aspect="AspectFill" Source="{Binding foodIcon}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
 
-                    <StackLayout  Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0">
-                      <StackLayout Orientation="Horizontal" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
-                        <local:CustomLabelLight Text="Ratings" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Grid  Grid.Row="3" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="White">
+                      <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="200"/>
+                      </Grid.ColumnDefinitions>
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                      </Grid.RowDefinitions>
+                      <local:CustomLabelLight Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Text="{Binding DishName}" FontAttributes="Bold" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0"  />
+                      <StackLayout  Grid.Row="1" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White"  VerticalOptions="Center" Margin="10,0">
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center">
+                          <local:CustomLabelLight Text="Ratings" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center">
+                          <Image Aspect="AspectFit" Source="like" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+                          <local:CustomLabelLight Text="453" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                          <Image Aspect="AspectFit" Source="share" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+                          <local:CustomLabelLight Text="45" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
                       </StackLayout>
-                      <StackLayout Orientation="Horizontal" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
-                        
-                        <local:CustomLabelLight Text="Likes" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                      <StackLayout  Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0">
+                        <StackLayout Orientation="Horizontal" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                          <local:CustomLabelLight Text="Ratings" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+
+                          <local:CustomLabelLight Text="Likes" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
+
+                          <local:CustomLabelLight Text="Share" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
                       </StackLayout>
-                      <StackLayout Orientation="Horizontal" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
-                        
-                        <local:CustomLabelLight Text="Share" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
-                      </StackLayout>
-                    </StackLayout>
+                    </Grid>
                   </Grid>
-                </Grid>
-              </local:CustomListViewCell.View>
-            </local:CustomListViewCell>
-          </DataTemplate>
-        </local:CustomListView.ItemTemplate>
-      </local:CustomListView>
+                </local:CustomListViewCell.View>
+              </local:CustomListViewCell>
+            </DataTemplate>
+          </local:CustomListView.ItemTemplate>
+        </local:CustomListView>
 
-    </ScrollView>
-  </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </ScrollView>
 </ContentPage>

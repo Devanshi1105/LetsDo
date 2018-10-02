@@ -11,7 +11,7 @@
           <TapGestureRecognizer Tapped="Menu_Tapped"/>
         </ContentView.GestureRecognizers>-->
       </ContentView>
-      <local:CustomLabelLight Text="Categories" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+      <local:CustomLabelLight Text="Shopping List" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
       <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
         <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
@@ -23,15 +23,29 @@
     <Grid  BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
       <Grid.RowDefinitions>
         <RowDefinition Height="30" />
-        <RowDefinition Height="*" />
+        <RowDefinition Height="400" />
         <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
 
       <ContentView Grid.Row="0" BackgroundColor="#f0eff5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
         <Label  Text="PAN SEARED RED SNAPPER" TextColor="#e74c3c"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
       </ContentView>
+      <local:CustomListView Grid.Row="1" x:Name="masterMenuList" ItemsSource="{Binding MenuItemList}"  RowHeight="80" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None" BackgroundColor="Transparent" >
+        <local:CustomListView.ItemTemplate>
+          <DataTemplate>
+            <local:CustomListViewCell>
+              <local:CustomListViewCell.View>
 
-      <ListView Grid.Row="1" x:Name="lst1" HasUnevenRows="True" >
+                <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" VerticalOptions="StartAndExpand" Margin="5">
+                  <Image Source="{Binding imgsource}" Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="30" WidthRequest="30"/>
+                  <local:CustomLabelRegular Text="{Binding Name}" TextColor="Black" FontSize="15" FontAttributes ="Bold"   VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+              </local:CustomListViewCell.View>
+            </local:CustomListViewCell>
+          </DataTemplate>
+        </local:CustomListView.ItemTemplate>
+      </local:CustomListView>
+      <!--<ListView Grid.Row="1" x:Name="lst1" HasUnevenRows="True" >
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -40,13 +54,13 @@
 
                 <StackLayout Orientation="Vertical">
                   <Label Text="{Binding Name}" Font="18"/>
-                  <!--<Label Text="{Binding Num}" TextColor="Gray"/>-->
+                  --><!--<Label Text="{Binding Num}" TextColor="Gray"/>--><!--
                 </StackLayout>
               </StackLayout>
             </ViewCell>
           </DataTemplate>
         </ListView.ItemTemplate>
-      </ListView>
+      </ListView>-->
 
     
     </Grid>

@@ -13,6 +13,7 @@ namespace LetsCookApp.Views
         public SettingsView()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

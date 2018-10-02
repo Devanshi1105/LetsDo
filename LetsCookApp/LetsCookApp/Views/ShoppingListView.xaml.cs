@@ -14,7 +14,7 @@ namespace LetsCookApp.Views
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            lst1.ItemsSource = new List<Contacts>()
+            masterMenuList.ItemsSource = new List<Contacts>()
             {
     new Contacts() {
             Name = "Umair Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "0456445450945", imgsource = "checkmark.png",

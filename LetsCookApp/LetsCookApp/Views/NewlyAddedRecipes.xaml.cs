@@ -13,6 +13,19 @@ namespace LetsCookApp.Views
         public NewlyAddedRecipes()
         {
             InitializeComponent();
+            List<SubCategory> _listAvailableAward = new List<SubCategory>()
+            {
+                new SubCategory {foodIcon = "shrimp.png" ,DishName = "Spanish Paells", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "9 MIn", servingIcon = "icon.png", Servings="6 Servings",ingrendIcon="icon.png" , Ingrendients="14 Ingredients" ,plusIcon="icon.png"},
+                new SubCategory {foodIcon = "snapper.png" ,DishName = "Shrimp Scampi", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "30 MIn", servingIcon = "icon.png", Servings="4 Servings",ingrendIcon="icon.png" , Ingrendients="8 Ingredients" ,plusIcon="icon.png"},
+                new SubCategory {foodIcon = "shrimp.png" ,DishName = "Pan Seared Red Snapper", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "15 MIn", servingIcon = "icon.png", Servings="4 Servings",ingrendIcon="icon.png" , Ingrendients="7 Ingredients" ,plusIcon="icon.png"},
+            };
+
+            //RaisePropertyChanged(() => ListAvailableAward);
+
+
+            listSubCatgory.ItemsSource = _listAvailableAward;
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
