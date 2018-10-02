@@ -2320,47 +2320,50 @@ namespace LetsCookApp.Droid
 			// aapt resource value: 0x7f0200af
 			public const int mr_ic_play_light = 2130837679;
 			
-			// aapt resource value: 0x7f0200bd
-			public const int notification_template_icon_bg = 2130837693;
-			
 			// aapt resource value: 0x7f0200b0
-			public const int overlay = 2130837680;
+			public const int newback = 2130837680;
+			
+			// aapt resource value: 0x7f0200be
+			public const int notification_template_icon_bg = 2130837694;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int poultry = 2130837681;
+			public const int overlay = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int recipes = 2130837682;
+			public const int poultry = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int roundedbg = 2130837683;
+			public const int recipes = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int roundedbgdark = 2130837684;
+			public const int roundedbg = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int seafood = 2130837685;
+			public const int roundedbgdark = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int search = 2130837686;
+			public const int seafood = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int serving = 2130837687;
+			public const int search = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int share = 2130837688;
+			public const int serving = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int shrimp = 2130837689;
+			public const int share = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int snapper = 2130837690;
+			public const int shrimp = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int splash = 2130837691;
+			public const int snapper = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int time = 2130837692;
+			public const int splash = 2130837692;
+			
+			// aapt resource value: 0x7f0200bd
+			public const int time = 2130837693;
 			
 			static Drawable()
 			{

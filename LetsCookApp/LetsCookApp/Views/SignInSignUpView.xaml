@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
-             x:Class="LetsCookApp.Views.SignInSignUpView"  BackgroundImage="back.png" >
+             x:Class="LetsCookApp.Views.SignInSignUpView"  BackgroundImage="newback.jpg" >
     
   <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" >
     <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
@@ -12,8 +12,8 @@
         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="10">
           <Grid.RowDefinitions>
 
-            <RowDefinition Height="130"/>
-            <RowDefinition Height="80"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="120"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
@@ -25,9 +25,13 @@
           </Grid.ColumnDefinitions>
 
          
-          <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="5" >
-            <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-            <Image x:Name="whtlock1" Source="letscook.png" Aspect="AspectFit"  WidthRequest="200" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+          <StackLayout Grid.Column="0"  Grid.Row="1" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="5" >
+            <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+          <local:CustomLabelRegular Text="Home Made Food" TextColor="#ffffff" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
+             </local:CustomLabelRegular>
+           <local:CustomLabelRegular Text="Veg Only" TextColor="#ffffff" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+             </local:CustomLabelRegular>
+           
           </StackLayout>
                     <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Text="CREATE MY ACCOUNT" TextColor="#e74c3c" FontSize="18" HeightRequest="50" BorderRadius="25" BackgroundColor="#fefefe" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="Create_Clicked" />
           <Button Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Text="SIGN IN" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="25" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="Signin_Clicked" />

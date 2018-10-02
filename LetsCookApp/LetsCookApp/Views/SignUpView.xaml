@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
-             x:Class="LetsCookApp.Views.SignUpView" BackgroundColor="White" BackgroundImage="back.png">
+             x:Class="LetsCookApp.Views.SignUpView" BackgroundColor="White" BackgroundImage="newback.jpg" >
     
     <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
         <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -17,12 +17,16 @@
                   </ContentView.GestureRecognizers>
                 </ContentView>
             </StackLayout>
-          <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand" Spacing="0" VerticalOptions="Center" Margin="0,120,0,0">
+          <StackLayout Orientation="Vertical"  HorizontalOptions="CenterAndExpand" Spacing="0" VerticalOptions="Center" Margin="0,120,0,0">
             <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-            <Image x:Name="whtlock1" Source="letscook.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="200"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            <local:CustomLabelRegular Text="Home Made Food" TextColor="#ffffff" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
+            </local:CustomLabelRegular>
+            <local:CustomLabelRegular Text="Veg Only" TextColor="#ffffff" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
+            </local:CustomLabelRegular>
+
           </StackLayout>
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="15,0" Padding="8">
-                <Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions> 
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
@@ -31,13 +35,31 @@
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="1"/>
                     <RowDefinition Height="50"/>
+                <RowDefinition Height="1"/>
+                    <RowDefinition Height="50"/>
+                <RowDefinition Height="1"/>
+                    <RowDefinition Height="50"/>
+              <RowDefinition Height="1"/>
+                    <RowDefinition Height="50"/>
+                <RowDefinition Height="1"/>
+                    <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
-                <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Email" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="BirthDay" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
                 <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Username" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Gender" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
                 <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-            </Grid>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="UserName" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+            
+          <BoxView Grid.Column="0" Grid.Row="5" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="6" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <BoxView Grid.Column="0" Grid.Row="7" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="8" TextColor="Black" Placeholder="Occupation" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <BoxView Grid.Column="0" Grid.Row="9" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                 <local:CustomEntryRegular Grid.Column="0" Grid.Row="10" TextColor="Black" Placeholder="Mobile" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <BoxView Grid.Column="0" Grid.Row="11" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                 <local:CustomEntryRegular Grid.Column="0" Grid.Row="12" TextColor="Black" Placeholder="About Me" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                
+          </Grid>
             <local:CustomButtonRegular  Text="CREATE MY ACCOUNT" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,10,15,20" Clicked="Create_Clicked"/>
         </StackLayout>
     </ScrollView>

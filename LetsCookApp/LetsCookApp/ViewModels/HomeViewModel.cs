@@ -16,16 +16,17 @@ namespace LetsCookApp.ViewModels
             IsMenuListPresented = false;
             _menuItemList = new List<Menu>()
             {
-                  new Menu {Title = "My Profile",  TargetType = typeof(CategoriesView)},
-                    new Menu {Title = "Newly Added Recipes",  TargetType = typeof(CategoriesView)},
-                      new Menu {Title = "Categories",  TargetType = typeof(CategoriesView)},
-                        new Menu {Title = "My Favourites Recipes",  TargetType = typeof(CategoriesView)},
-                          new Menu {Title = "Shopping List",  TargetType = typeof(ShoppingListView)},
-                new Menu {Title = "Suggest Recipes",  TargetType = typeof(CategoriesView)},
-                new Menu {Title = "Please Help Me", TargetType = typeof(ShoppingListView)},
-                new Menu {Title = "About the App", TargetType = typeof(SearchView)},
-                new Menu {Title = "Settings",  TargetType = typeof(SearchView)},
-                new Menu {Title = "ShareApp",  TargetType = typeof(SearchView)},
+                new Menu {Title = "My Profile",  TargetType = typeof(MyProfileView)},
+                new Menu {Title = "Newly Added Recipes",  TargetType = typeof(NewlyAddedRecipes)},
+                new Menu {Title = "Popular Recipes",  TargetType = typeof(PopularReceipesView)},
+                new Menu {Title = "Categories",  TargetType = typeof(CategoriesView)},
+                new Menu {Title = "My Favourites Recipes",  TargetType = typeof(MyFavouritesRecipesView)},
+                new Menu {Title = "Shopping List",  TargetType = typeof(ShoppingListView)},
+                new Menu {Title = "Suggest Recipes",  TargetType = typeof(SuggestRecipesView)},
+                new Menu {Title = "Please Help Me", TargetType = typeof(HelpMeView)},
+                new Menu {Title = "About the App", TargetType = typeof(AboutUsView)},
+                new Menu {Title = "Settings",  TargetType = typeof(SettingsView)},
+                new Menu {Title = "ShareApp",  TargetType = typeof(ShareAppView)},
             };
             RaisePropertyChanged(() => MenuItemList);
         }
@@ -59,7 +60,7 @@ namespace LetsCookApp.ViewModels
 
     public class Menu
     {
-        public string Title { get; set; }     
+        public string Title { get; set; }
         public Type TargetType { get; set; }
     }
 }
