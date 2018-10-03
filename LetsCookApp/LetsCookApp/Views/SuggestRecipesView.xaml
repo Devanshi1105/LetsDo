@@ -51,7 +51,7 @@
 
 
         <StackLayout Grid.Column="0"  Grid.Row="4" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="5" >
-          <Image x:Name="whtlock" Source="icon.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+          <Image x:Name="whtlock" Source="picture.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
           <local:CustomLabelRegular Text="Add Image" TextColor="#BC3F33" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
           </local:CustomLabelRegular>
           <local:CustomLabelRegular Text="Your Detail" TextColor="#BC3F33" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">

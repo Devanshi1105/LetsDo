@@ -13,8 +13,8 @@
                         <local:CustomListViewCell>
                             <local:CustomListViewCell.View>
                              
-                                <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" VerticalOptions="StartAndExpand" Margin="5">
-                                  <Image Source="cooking.png" Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="30" WidthRequest="30"/>
+                                <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" VerticalOptions="StartAndExpand" Spacing="10" Margin="15,5,5,5">
+                                  <Image Source="{Binding imagesource}" Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="22" WidthRequest="22"/>
                                     <local:CustomLabelRegular Text="{Binding Title}" TextColor="#ffffff" FontSize="15" FontAttributes ="Bold"   VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
                                 </StackLayout>
                             </local:CustomListViewCell.View>

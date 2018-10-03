@@ -57,9 +57,9 @@
         </Grid.RowDefinitions>
         <local:CustomLabelRegular Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Text="Share to your friend by using these" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
         </local:CustomLabelRegular>
-        <Image  Source="icon.png" Grid.Column="1"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <Image  Source="icon.png" Grid.Column="2"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <Image  Source="icon.png" Grid.Column="3"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="facebook.png" Grid.Column="1"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="twitter.png" Grid.Column="2"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="google.png" Grid.Column="3"  Grid.Row="1" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
         <local:CustomLabelRegular Grid.Column="1"  Grid.Row="2" Text="Facebook" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
         </local:CustomLabelRegular>
@@ -67,9 +67,9 @@
         </local:CustomLabelRegular>
         <local:CustomLabelRegular Grid.Column="3"  Grid.Row="2" Text="GooglePlus" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
         </local:CustomLabelRegular>
-        <Image  Source="icon.png" Grid.Column="1"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <Image  Source="icon.png" Grid.Column="2"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <Image  Source="icon.png" Grid.Column="3"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="line.png" Grid.Column="1"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="whatsapp.png" Grid.Column="2"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Image  Source="sms.png" Grid.Column="3"  Grid.Row="3" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
         <local:CustomLabelRegular Grid.Column="1"  Grid.Row="4" Text="Line" TextColor="Black" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
         </local:CustomLabelRegular>
