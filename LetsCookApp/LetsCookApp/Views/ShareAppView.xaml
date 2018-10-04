@@ -12,7 +12,7 @@
             <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
           </ContentView.GestureRecognizers>
         </ContentView>
-        <local:CustomLabelLight Text="Share App" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+        <local:CustomLabelLight Text="Share App" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
         <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
           <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
@@ -21,7 +21,7 @@
           </ContentView.GestureRecognizers>
         </ContentView>
       </StackLayout>
-      <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" BackgroundColor="#BC3F33"  Spacing="0" VerticalOptions="FillAndExpand" Margin="0,0,0,0">
+      <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" BackgroundColor="#e74c3c" Padding="0" Spacing="0" VerticalOptions="FillAndExpand" Margin="0,0,0,0">
         <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
         <local:CustomLabelRegular Text="Invite friend and both of you will get exciting  " TextColor="White" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
@@ -33,13 +33,13 @@
          
           <local:CustomLabelRegular Text="Share your code" TextColor="White" FontSize="12" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
           </local:CustomLabelRegular>
-         
-          <local:CustomLabelRegular Text="HMF12432" TextColor="White" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
-          </local:CustomLabelRegular>
+
+          <Image  Source="crop.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
 
         </StackLayout>
       </StackLayout>
-      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Padding="8">
+      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" >
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="30"/>
           <ColumnDefinition Width="100"/>

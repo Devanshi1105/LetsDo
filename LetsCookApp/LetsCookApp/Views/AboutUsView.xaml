@@ -12,7 +12,7 @@
             <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
           </ContentView.GestureRecognizers>
         </ContentView>
-        <local:CustomLabelLight Text="About the App" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+        <local:CustomLabelLight Text="About the App" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
         <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
           <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
@@ -39,7 +39,7 @@
         <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackLayout Orientation="Horizontal" Grid.Row="0" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
-          <local:CustomLabelLight Text="Home Made Food" TextColor="#BC3F33" FontSize="20" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+          <local:CustomLabelLight Text="Home Made Food" TextColor="#e74c3c" FontSize="20" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
           <local:CustomLabelLight Text="Veg Only" TextColor="Black" FontSize="18" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
 
         </StackLayout>
@@ -51,7 +51,7 @@ dishes only in the language that you speak at home."  TextColor="Black" FontSize
         </StackLayout>
 
         <StackLayout Orientation="Horizontal" Grid.Row="2" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
-          <local:CustomLabelLight Text="Home Made Food (Veg Only)" TextColor="#BC3F33" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+          <local:CustomLabelLight Text="Home Made Food (Veg Only)" TextColor="#e74c3c" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
           <local:CustomLabelLight Text="Is a Global Platform for" TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
         </StackLayout>
  <local:CustomLabelLight Text="Indian community to share your Cooking Art and food 

@@ -9,7 +9,7 @@
       <ContentView HorizontalOptions="Start" VerticalOptions="Center">
         <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
       </ContentView>
-      <local:CustomLabelLight Text="Search" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  />
+      <local:CustomLabelLight Text="Search" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  />
       <ContentView HorizontalOptions="Start" VerticalOptions="Center">
         <Image Source="close" HorizontalOptions="Center" VerticalOptions="Center"/>
         <ContentView.GestureRecognizers>

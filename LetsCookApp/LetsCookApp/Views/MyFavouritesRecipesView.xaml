@@ -8,7 +8,7 @@
                 <ContentView HorizontalOptions="Start" VerticalOptions="Start">
                     <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </ContentView>
-                <local:CustomLabelLight Text="Seafood" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  />
+                <local:CustomLabelLight Text="Seafood" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  />
                 <ContentView HorizontalOptions="Start" VerticalOptions="End">
                     <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
                   <ContentView.GestureRecognizers>
@@ -23,7 +23,7 @@
           <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
         </ContentView.GestureRecognizers>
       </ContentView>
-      <local:CustomLabelLight Text="My Favourite Recipes" TextColor="#BC3F33" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+      <local:CustomLabelLight Text="My Favourite Recipes" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
       <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
         <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 

@@ -36,7 +36,7 @@ namespace LetsCookApp
             };
 
            // appSetup.LoginViewModel.GetAllCategory();
-            MainPage = new NavigationPage(new SignInSignUpView());
+            MainPage = new NavigationPage(new MyProfileView());
         }
 
         protected override void OnStart()
