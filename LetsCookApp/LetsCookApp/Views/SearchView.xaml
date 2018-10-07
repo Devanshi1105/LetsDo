@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
-             x:Class="LetsCookApp.Views.SearchView" Title="Search" BackgroundImage="back.png">
+             x:Class="LetsCookApp.Views.SearchView" Title="Search" BackgroundImage="Backary.png">
 
   <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="50" BackgroundColor="Black">

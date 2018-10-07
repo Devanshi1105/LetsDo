@@ -17,9 +17,9 @@ namespace LetsCookApp.Views
 
             List<SubCategory> _listAvailableAward = new List<SubCategory>()
             {
-                new SubCategory {foodIcon = "shrimp.png" ,DishName = "Spanish Paells", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "9 MIn", servingIcon = "icon.png", Servings="6 Servings",ingrendIcon="icon.png" , Ingrendients="14 Ingredients" ,plusIcon="icon.png"},
-                new SubCategory {foodIcon = "snapper.png" ,DishName = "Shrimp Scampi", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "30 MIn", servingIcon = "icon.png", Servings="4 Servings",ingrendIcon="icon.png" , Ingrendients="8 Ingredients" ,plusIcon="icon.png"},
-                new SubCategory {foodIcon = "shrimp.png" ,DishName = "Pan Seared Red Snapper", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "15 MIn", servingIcon = "icon.png", Servings="4 Servings",ingrendIcon="icon.png" , Ingrendients="7 Ingredients" ,plusIcon="icon.png"},
+                new SubCategory {foodIcon = "cacke.png" ,DishName = "Cake Recipes", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "9 MIn", servingIcon = "icon.png", Servings="6 Servings",ingrendIcon="icon.png" , Ingrendients="14 Ingredients" ,plusIcon="icon.png"},
+                new SubCategory {foodIcon = "donat.png" ,DishName = "Donut Recipe", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "30 MIn", servingIcon = "icon.png", Servings="4 Servings",ingrendIcon="icon.png" , Ingrendients="8 Ingredients" ,plusIcon="icon.png"},
+                new SubCategory {foodIcon = "ruge.png" ,DishName = "Rugelach Recipe", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "15 MIn", servingIcon = "icon.png", Servings="4 Servings",ingrendIcon="icon.png" , Ingrendients="7 Ingredients" ,plusIcon="icon.png"},
             };
 
             //RaisePropertyChanged(() => ListAvailableAward);
@@ -56,5 +56,6 @@ namespace LetsCookApp.Views
         public ImageSource ingrendIcon { get; set; }
         public string Ingrendients { get; set; }
         public ImageSource plusIcon { get; set; }
+        public double UserRating { get; set; }
     }
 }

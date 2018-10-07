@@ -26,7 +26,7 @@
                       <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
                     </ContentView.GestureRecognizers>
                   </ContentView>
-                  <local:CustomLabelLight Text="Pan Seared Red Snapper" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+                  <local:CustomLabelLight Text="Cacke Recipe" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
                   <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
                     <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
@@ -72,7 +72,7 @@
                     </Grid.RowDefinitions>
                   
                 
-                    <Image Grid.Row="0" HeightRequest="60" HorizontalOptions="FillAndExpand"  Source="snapper.png" Aspect="AspectFill" />
+                    <Image Grid.Row="0" HeightRequest="60" HorizontalOptions="FillAndExpand"  Source="cacke.png" Aspect="AspectFill" />
                     <Image  Grid.Row="0"  TranslationX="130"  VerticalOptions="End" HeightRequest="30" WidthRequest="30" Source="expand.png" />
 
                   <ContentView Grid.Row="1" BackgroundColor="#f0eff5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >

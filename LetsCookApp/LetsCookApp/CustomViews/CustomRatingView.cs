@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace LetsCookApp.CustomViews
@@ -88,7 +87,7 @@ namespace LetsCookApp.CustomViews
             var grd3 = new Grid() { Children = { staroff3, staron3, starhalfoff3 } };
             var grd4 = new Grid() { Children = { staroff4, staron4, starhalfoff4 } };
             var grd5 = new Grid() { Children = { staroff5, staron5, starhalfoff5 } };
-            
+
 
             stlLayout = new StackLayout { Orientation = StackOrientation.Horizontal, HorizontalOptions = LayoutOptions.CenterAndExpand, Children = { grd1, grd2, grd3, grd4, grd5 } };
             //Set Tap Gesture in Rate Star
@@ -172,9 +171,10 @@ namespace LetsCookApp.CustomViews
             if (ratevalue > 1 && ratevalue < 1.6)
             {
                 starhalfoff1.IsVisible = true;
-                staron5.IsVisible = staron4.IsVisible = staron3.IsVisible = staron2.IsVisible = staron1.IsVisible= false;
+                staron5.IsVisible = staron4.IsVisible = staron3.IsVisible = staron2.IsVisible = staron1.IsVisible = false;
                 starhalfoff2.IsVisible = starhalfoff3.IsVisible = starhalfoff4.IsVisible = starhalfoff5.IsVisible = false;
-            }else if (ratevalue > 2 && ratevalue < 2.6)
+            }
+            else if (ratevalue > 2 && ratevalue < 2.6)
             {
                 starhalfoff2.IsVisible = true;
                 staron5.IsVisible = staron4.IsVisible = staron3.IsVisible = staron2.IsVisible = staron1.IsVisible = false;
@@ -229,7 +229,7 @@ namespace LetsCookApp.CustomViews
                 starhalfoff2.IsVisible = starhalfoff3.IsVisible = starhalfoff4.IsVisible = starhalfoff1.IsVisible = starhalfoff5.IsVisible = false;
             }
 
-            
+
             #endregion
         }
     }

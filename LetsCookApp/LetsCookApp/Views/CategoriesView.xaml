@@ -42,9 +42,9 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
               </Grid.RowDefinitions>
-              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Aspect="AspectFill" Source="seafood" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Aspect="AspectFill" Source="Breakfast" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
               <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                <local:CustomLabelLight Text="Seafood" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
+                <local:CustomLabelLight Text="BreakFast" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                   <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="25" WidthRequest="25"/>
                   <local:CustomLabelLight Text="223 Recipes" TextColor="#ffffff" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"  />
@@ -61,11 +61,12 @@
               <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                
                 <RowDefinition Height="*"/>
               </Grid.RowDefinitions>
-              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="poultry" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="Backary" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
               <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                <local:CustomLabelLight Text="Poultry" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
+                <local:CustomLabelLight Text="Bakery" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                   <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="25" WidthRequest="25"/>
                   <local:CustomLabelLight Text="218 Recipes" TextColor="#ffffff" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"  />
@@ -84,9 +85,9 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
               </Grid.RowDefinitions>
-              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="meats" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+              <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="chat" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
               <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                <local:CustomLabelLight Text="Meats" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
+                <local:CustomLabelLight Text="Chaat" TextColor="#ffffff" FontAttributes="Bold" FontSize="34" HorizontalOptions="Center" VerticalOptions="Center"  />
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                   <Image Source="recipes" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="25" WidthRequest="25"/>
                   <local:CustomLabelLight Text="198 Recipes" TextColor="#ffffff" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"  />
@@ -97,6 +98,7 @@
               </Grid.GestureRecognizers>
             </Grid>
             
+          
           </Grid>
 
 
