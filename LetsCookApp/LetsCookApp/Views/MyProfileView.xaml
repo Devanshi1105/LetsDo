@@ -21,44 +21,155 @@
           </ContentView.GestureRecognizers>
         </ContentView>
       </StackLayout>
-      <StackLayout Orientation="Vertical"  Padding="10,10" HorizontalOptions="FillAndExpand" BackgroundColor="#e74c3c" Spacing="0" VerticalOptions="FillAndExpand" Margin="10">
+      <StackLayout Orientation="Vertical" HeightRequest="120"  Padding="10,10" HorizontalOptions="FillAndExpand" BackgroundColor="#e74c3c" Spacing="0" VerticalOptions="StartAndExpand" Margin="10">
         <Image x:Name="whtlock" Source="man.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
 
       </StackLayout>
-      <StackLayout Orientation="Vertical"  HorizontalOptions="CenterAndExpand"  Spacing="0" VerticalOptions="Center" Margin="0,15,0,15">
+      <StackLayout Orientation="Vertical"  HeightRequest="100" HorizontalOptions="CenterAndExpand"  Spacing="0"  VerticalOptions="FillAndExpand" >
         <local:CustomLabelRegular Text="Santosh Kundkar" TextColor="Black" FontSize="25" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
         </local:CustomLabelRegular>
         <local:CustomLabelRegular Text="Team Lead" TextColor="Black" FontSize="15"    HorizontalOptions="Center" VerticalOptions="Center">
         </local:CustomLabelRegular>
 
       </StackLayout>
-      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="15,0" Padding="8">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="50"/>
-          <RowDefinition Height="1"/>
-          <RowDefinition Height="50"/>
-          <RowDefinition Height="1"/>
-          <RowDefinition Height="50"/>
-          <RowDefinition Height="1"/>
-          <RowDefinition Height="50"/>
-          <RowDefinition Height="1"/>
+      
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" 
+ BackgroundColor="Transparent" RowSpacing="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="2"/>
+            </Grid.RowDefinitions>
 
-        </Grid.RowDefinitions>
-        <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Name" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-        <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Email" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-        <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="Contact" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+            <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label  Text="TIMELINE" TextColor="#e74c3c" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Timeline_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <BoxView x:Name="TLine" Grid.Column="0" Grid.Row="1" HeightRequest="2" IsVisible="True" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
 
-        <BoxView Grid.Column="0" Grid.Row="5" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <local:CustomEntryRegular Grid.Column="0" Grid.Row="6" TextColor="Black" Placeholder="Query" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-        <BoxView Grid.Column="0" Grid.Row="7" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-
+            <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label  Text="ABOUT ME" TextColor="#e74c3c" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="AboutMe_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <BoxView x:Name="ALine" Grid.Column="1" Grid.Row="1" HeightRequest="2" IsVisible="False" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+       
+         <StackLayout Grid.Column="2" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label  Text="FRIENDS" TextColor="#e74c3c" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Friends_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <BoxView x:Name="FLine" Grid.Column="2" Grid.Row="1" HeightRequest="2" IsVisible="False" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+       
+         <StackLayout Grid.Column="3" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label  Text="GALLERY" TextColor="#e74c3c" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Gallery_Tapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <BoxView x:Name="GLine" Grid.Column="3" Grid.Row="1" HeightRequest="2" IsVisible="False" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+       
       </Grid>
-      <local:CustomButtonRegular  Text="SUBMIT" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,10,15,20" />
-    </StackLayout>
+      
+    <Grid x:Name="grdTimeline" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#ffffff" Margin="10,10,0,10" Padding="8">
+                <Grid.ColumnDefinitions> 
+                    <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                   <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                   
+                </Grid.RowDefinitions>
+                
+      <Image  Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Source="man.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
+
+  <StackLayout Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" HeightRequest="50" HorizontalOptions="StartAndExpand"  Spacing="0" VerticalOptions="StartAndExpand" >
+        <local:CustomLabelRegular Text="Santosh Kundkar" TextColor="Black" FontSize="15" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <local:CustomLabelRegular Text="10 Oct 2018" TextColor="Black" FontSize="12"    HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+
+      </StackLayout>
+     <Image  Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" Source="Dosa.png" Aspect="AspectFit"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+          </Grid>
+    <Grid x:Name="grdAboutme" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#ffffff" Margin="10,10,0,10" Padding="8">
+                <Grid.ColumnDefinitions> 
+                    <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                   <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                   
+                </Grid.RowDefinitions>
+                
+      <Image  Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Source="man.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
+
+  
+     
+          </Grid>
+     
+  <Grid x:Name="grdFriends" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#ffffff" Margin="10,10,0,10" Padding="8">
+                <Grid.ColumnDefinitions> 
+                    <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                   <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                   
+                </Grid.RowDefinitions>
+                
+     
+  <StackLayout Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" HeightRequest="50" HorizontalOptions="StartAndExpand"  Spacing="0" VerticalOptions="StartAndExpand" >
+        <local:CustomLabelRegular Text="Santosh Kundkar" TextColor="Black" FontSize="15" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <local:CustomLabelRegular Text="10 Oct 2018" TextColor="Black" FontSize="12"    HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+
+      </StackLayout>
+     <Image  Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" Source="Dosa.png" Aspect="AspectFit"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+          </Grid>
+  
+  <Grid x:Name="grdGallery" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#ffffff" Margin="10,10,0,10" Padding="8">
+                <Grid.ColumnDefinitions> 
+                    <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                   <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                   
+                </Grid.RowDefinitions>
+                
+      <Image  Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Source="man.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
+
+  <StackLayout Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" HeightRequest="50" HorizontalOptions="StartAndExpand"  Spacing="0" VerticalOptions="StartAndExpand" >
+        <local:CustomLabelRegular Text="Santosh Kundkar" TextColor="Black" FontSize="15" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+        <local:CustomLabelRegular Text="10 Oct 2018" TextColor="Black" FontSize="12"    HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+        </local:CustomLabelRegular>
+
+      </StackLayout>
+     <Image  Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" Source="Dosa.png" Aspect="AspectFit"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+          </Grid>
+  </StackLayout>
   </ScrollView>
 </ContentPage>
