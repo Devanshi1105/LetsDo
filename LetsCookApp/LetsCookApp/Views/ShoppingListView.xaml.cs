@@ -31,5 +31,9 @@ namespace LetsCookApp.Views
         {
             Navigation.PushAsync(new SearchView());
         }
+        private void Menu_Tapped(object sender, EventArgs e)
+        {
+            App.AppSetup.HomeViewModel.IsMenuListPresented = true;
+        }
     }
 }

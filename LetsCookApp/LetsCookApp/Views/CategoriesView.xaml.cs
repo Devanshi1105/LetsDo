@@ -24,7 +24,7 @@ namespace LetsCookApp.Views
         }
         private void Menu_Tapped(object sender, EventArgs e)
         {
-           // Navigation.PushAsync(new HomeView());
+            App.AppSetup.HomeViewModel.IsMenuListPresented = true;
         }
         private void Search_Tapped(object sender, EventArgs e)
         {

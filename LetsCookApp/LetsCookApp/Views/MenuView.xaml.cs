@@ -16,6 +16,7 @@ namespace LetsCookApp.Views
         public MenuView()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             this.menuList = masterMenuList;
         }
 
@@ -24,6 +25,12 @@ namespace LetsCookApp.Views
         
             NavigateTo((ViewModels.Menu)e.Item);
         }
+
+        private void Menu_Tapped(object sender, EventArgs e)
+        {
+            App.AppSetup.HomeViewModel.IsMenuListPresented = false;
+        }
+
         void NavigateTo(ViewModels.Menu menu)
         {
             if (menu.TargetType == typeof(CategoriesView))

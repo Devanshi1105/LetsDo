@@ -33,6 +33,10 @@ namespace LetsCookApp.Views
         {
             Navigation.PushAsync(new SearchView());
         }
+        private void Menu_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
         private void listSubCatgory_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)

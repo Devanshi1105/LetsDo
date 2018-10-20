@@ -21,7 +21,7 @@ namespace LetsCookApp
 
             // Services
             SimpleIoc.Default.Register<ISettingsManager, SettingsManager>();
-            SimpleIoc.Default.Register<IApiProvider, ApiProvider>();
+           SimpleIoc.Default.Register<IApiProvider, ApiProvider>();
             SimpleIoc.Default.Register<IManager, Manager>();
         }
         public LoginViewModel LoginViewModel

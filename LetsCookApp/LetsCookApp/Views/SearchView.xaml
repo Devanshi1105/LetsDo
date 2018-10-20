@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
-             x:Class="LetsCookApp.Views.SearchView" Title="Search" BackgroundImage="Backary.png">
+             x:Class="LetsCookApp.Views.SearchView" Title="Search"  BackgroundColor="Transparent">
 
   <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="50" BackgroundColor="Black">
       <ContentView HorizontalOptions="Start" VerticalOptions="Center">
-        <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25"  VerticalOptions="Center"/>
       </ContentView>
       <local:CustomLabelLight Text="Search" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  />
       <ContentView HorizontalOptions="Start" VerticalOptions="Center">
@@ -17,7 +17,8 @@
         </ContentView.GestureRecognizers>
       </ContentView>
     </StackLayout>
-    <SearchBar Placeholder="What would you like to cook?" TextColor="Black" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+       
+      <SearchBar Placeholder="What would you like to cook?" TextColor="Black" PlaceholderColor="#9A9A9A" BackgroundColor="#e8e7e6" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
 
   </StackLayout>
 

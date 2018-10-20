@@ -4,11 +4,11 @@
               xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
              x:Class="LetsCookApp.Views.CategoriesView">
 
-    <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+   
         <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
                 <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
-                    <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
                   <ContentView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Menu_Tapped"/>
                   </ContentView.GestureRecognizers>
@@ -22,8 +22,8 @@
                   </ContentView.GestureRecognizers>
                 </ContentView>
             </StackLayout>
-
-          <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Grid.ColumnDefinitions>
               <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -101,7 +101,7 @@
           
           </Grid>
 
-
-        </StackLayout>
-    </ScrollView>
+        </ScrollView>
+    </StackLayout>
+   
 </ContentPage>

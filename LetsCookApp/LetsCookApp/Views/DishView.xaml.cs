@@ -38,6 +38,18 @@ namespace LetsCookApp.Views
             Name = "Nature Here, you can see that we", Num = "56445905", imgsource = "checkmark.png",
         },
         new Contacts() {
+            Name = "Nature Here, you can see that we", Num = "56445905", imgsource = "checkmark.png",
+        },
+        new Contacts() {
+            Name = "Nature Here, you can see that we", Num = "56445905", imgsource = "checkmarkon.png",
+        },
+        new Contacts() {
+            Name = "Cat Here, you can see that we", Num = "034456445905", imgsource = "checkmarkon.png",
+        },
+        new Contacts() {
+            Name = "Nature Here, you can see that we", Num = "56445905", imgsource = "checkmark.png",
+        },
+        new Contacts() {
             Name = "Nature Here, you can see that we", Num = "56445905", imgsource = "checkmarkon.png",
         },
 };
@@ -46,30 +58,30 @@ namespace LetsCookApp.Views
             lst2.ItemsSource = new List<Contacts>()
             {
     new Contacts() {
-            Name = "Umair Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "0456445450945", imgsource = "you_tab",
+            Name = "Umair Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "0456445450945", imgsource = "checkmark.png",
         },
         new Contacts() {
-            Name = "Cat Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "034456445905", imgsource = "nact.png",
+            Name = "Cat Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "034456445905", imgsource = "checkmark.png",
         },
         new Contacts() {
-            Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "nact.png",
+            Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "checkmark.png",
         },
          new Contacts() {
-            Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "act.png",
+            Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "checkmark.png",
         },
                 new Contacts() {
-            Name = "Cat Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "034456445905", imgsource = "you_tab",
+            Name = "Cat Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "034456445905", imgsource = "checkmark",
         },
         new Contacts() {
-            Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "act.png",
+            Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "checkmark.png",
         },
                 new Contacts()
                 {
-                    Name = "Cat Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "034456445905", imgsource = "nact.png",
+                    Name = "Cat Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "034456445905", imgsource = "checkmark.png",
                 },
         new Contacts()
         {
-            Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "act.png",
+            Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "checkmark.png",
         },
             };
         }
@@ -85,6 +97,11 @@ namespace LetsCookApp.Views
             {
                 item.imgsource = "nact";
             }
+        }
+
+        private void Menu_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
         }
         private void Search_Tapped(object sender, EventArgs e)
         {

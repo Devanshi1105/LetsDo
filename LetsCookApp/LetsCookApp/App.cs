@@ -13,6 +13,9 @@ namespace LetsCookApp
     {
         public static AppSetup AppSetup { get { return appSetup; } }
         private static AppSetup appSetup;
+
+      
+
         public App()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
@@ -35,10 +38,13 @@ namespace LetsCookApp
                 }
             };
 
-           // appSetup.LoginViewModel.GetAllCategory();
-            MainPage = new NavigationPage(new SignInSignUpView());
+           // page = new Main();
+           // Current.MainPage = page;
+             appSetup.LoginViewModel.GetAllCategory();
+             MainPage = new NavigationPage(new SignInSignUpView());
         }
 
+       
         protected override void OnStart()
         {
             // Handle when your app starts

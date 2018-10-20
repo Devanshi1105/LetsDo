@@ -27,7 +27,11 @@ namespace LetsCookApp.Views
              App.Current.MainPage = new Views.HomeView();
           
         }
+        private void Close_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PopToRootAsync();
+        }
 
-        
+
     }
 }

@@ -21,12 +21,12 @@
 
                 <StackLayout  Grid.Column="0"  Grid.Row="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
                   <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
-                    <Image Source="menu" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Image Source="backarrow" HorizontalOptions="Center" VerticalOptions="Center"/>
                     <ContentView.GestureRecognizers>
-                      <!--<TapGestureRecognizer Tapped="Menu_Tapped"/>-->
+                      <TapGestureRecognizer Tapped="Menu_Tapped"/>
                     </ContentView.GestureRecognizers>
                   </ContentView>
-                  <local:CustomLabelLight Text="Cacke Recipe" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+                  <local:CustomLabelLight Text="Cake Recipe" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
                   <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
                     <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
@@ -75,8 +75,8 @@
                     <Image Grid.Row="0" HeightRequest="60" HorizontalOptions="FillAndExpand"  Source="cacke.png" Aspect="AspectFill" />
                     <Image  Grid.Row="0"  TranslationX="130"  VerticalOptions="End" HeightRequest="30" WidthRequest="30" Source="expand.png" />
 
-                  <ContentView Grid.Row="1" BackgroundColor="#f0eff5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-                  <Label  Text="INGREDIENTS" TextColor="#e74c3c"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
+                  <ContentView Grid.Row="1" BackgroundColor="#f0eff5"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                        <Label  Text="INGREDIENTS" TextColor="#e74c3c" Margin="10,0,0,0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
                   </ContentView>
                   <local:CustomListView BackgroundColor="White" Grid.Row="2" x:Name="lst1" HasUnevenRows="True" ItemTapped="lst1_ItemTapped">
                         <local:CustomListView.ItemTemplate>
@@ -109,8 +109,8 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
-                  <ContentView Grid.Row="0" BackgroundColor="#f0eff5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-                    <Label  Text="PREPARATION" TextColor="#e74c3c"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
+                    <ContentView Grid.Row="0" BackgroundColor="#f0eff5"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                        <Label  Text="PREPARATION" TextColor="#e74c3c"  Margin="10,0,0,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
                   </ContentView>
                     
                     <ListView Grid.Row="1" x:Name="lst2" HasUnevenRows="True" ItemTapped="lst2_ItemTapped">
@@ -118,7 +118,7 @@
                             <DataTemplate>
                                 <ViewCell>
                                     <StackLayout Orientation="Horizontal">
-                                        <Image Source="{Binding imgsource}" HeightRequest="30" WidthRequest="50" HorizontalOptions="Start"/>
+                                        <Image Source="{Binding imgsource}" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" HorizontalOptions="Start"/>
 
                                         <StackLayout Orientation="Vertical">
                                             <Label Text="{Binding Name}" Font="18"/>

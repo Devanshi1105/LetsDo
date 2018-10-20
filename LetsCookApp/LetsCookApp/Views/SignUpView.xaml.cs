@@ -26,5 +26,10 @@ namespace LetsCookApp.Views
         {
             Navigation.PushAsync(new SignInView());
         }
+
+        private void Close_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PopToRootAsync();
+        }
     }
 }

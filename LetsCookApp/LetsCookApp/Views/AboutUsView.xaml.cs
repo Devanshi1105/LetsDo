@@ -13,6 +13,11 @@ namespace LetsCookApp.Views
         public AboutUsView()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+        private void Menu_Tapped(object sender, EventArgs e)
+        {
+            App.AppSetup.HomeViewModel.IsMenuListPresented = true;
         }
     }
 }
