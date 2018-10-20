@@ -28,7 +28,7 @@
         <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
         <ContentView.GestureRecognizers>
-          <!--<TapGestureRecognizer Tapped="Search_Tapped"/>-->
+          <TapGestureRecognizer Tapped="Search_Tapped"/>
         </ContentView.GestureRecognizers>
       </ContentView>
     </StackLayout>
@@ -45,15 +45,15 @@
                     <ColumnDefinition Width="30"/>
                   </Grid.ColumnDefinitions>
                   <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="5"/>
+                   
                   </Grid.RowDefinitions>
                   <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Aspect="AspectFill" Source="{Binding foodIcon}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
                   <Image Grid.Column="1" Grid.Row="1"  Aspect="AspectFit" Source="favorite" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
 
-                  <Grid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Black" Opacity="0.7">
+                  <Grid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="Black" Opacity="0.8">
                     <Grid.ColumnDefinitions>
                       <ColumnDefinition Width="*"/>
                       <ColumnDefinition Width="30"/>

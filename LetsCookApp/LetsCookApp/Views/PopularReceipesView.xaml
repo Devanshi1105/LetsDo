@@ -14,7 +14,13 @@
           </ContentView.GestureRecognizers>
         </ContentView>
         <local:CustomLabelLight Text="Popular Recipes" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+        <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
+          <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
+          <ContentView.GestureRecognizers>
+            <TapGestureRecognizer Tapped="Search_Tapped"/>
+          </ContentView.GestureRecognizers>
+        </ContentView>
       </StackLayout>
 
       <local:CustomListView x:Name="listSubCatgory"  HasUnevenRows="True"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" SeparatorVisibility="None"  BackgroundColor="White">
@@ -49,13 +55,13 @@
                     <local:CustomLabelLight Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Text="{Binding DishName}" FontAttributes="Bold" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0"  />
                     <StackLayout  Grid.Row="1" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand"   VerticalOptions="Center" Margin="10,0">
                       <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center">
-                        <local:CustomLabelLight Text="Like" TextColor="White" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <local:CustomLabelLight Text="LIKE" TextColor="White" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
                         <Image Aspect="AspectFit" Source="liket" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
                         <local:CustomLabelLight Text="453" TextColor="White" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
                       </StackLayout>
 
                       <StackLayout Orientation="Horizontal" Padding="20,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
-                        <local:CustomLabelLight Text="Share" TextColor="White" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <local:CustomLabelLight Text="SHARE" TextColor="White" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
                         <Image Aspect="AspectFit" Source="sharet" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
                         <local:CustomLabelLight Text="45" TextColor="White" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
                       </StackLayout>

@@ -17,7 +17,7 @@
           <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
           <ContentView.GestureRecognizers>
-            <!--<TapGestureRecognizer Tapped="Search_Tapped"/>-->
+            <TapGestureRecognizer Tapped="Search_Tapped"/>
           </ContentView.GestureRecognizers>
         </ContentView>
       </StackLayout>
@@ -36,7 +36,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="1"/>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="120"/>
                         <RowDefinition Height="1"/>
                         <RowDefinition Height="150"/>
                         <RowDefinition Height="50"/>
@@ -49,10 +49,9 @@
                     </Grid.RowDefinitions>
                     <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Recipe Name" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Your Recipe" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                  <local:PlaceholderEditor  Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Your Recipe" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
 
-
+                   
                     <StackLayout Grid.Column="0"  Grid.Row="4" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="5" >
                         <Image x:Name="whtlock" Source="picture.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
                         <local:CustomLabelRegular Text="Add Image" TextColor="#e74c3c" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">

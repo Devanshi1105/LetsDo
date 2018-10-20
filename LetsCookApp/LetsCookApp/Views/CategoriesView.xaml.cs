@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,9 +27,13 @@ namespace LetsCookApp.Views
         {
             App.AppSetup.HomeViewModel.IsMenuListPresented = true;
         }
-        private void Search_Tapped(object sender, EventArgs e)
+        private  void Search_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SearchView());
+            var page = new SearchView();
+
+             PopupNavigation.PushAsync(page);
         }
+
+
     }
 }

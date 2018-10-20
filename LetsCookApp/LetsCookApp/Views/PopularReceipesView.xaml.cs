@@ -31,5 +31,11 @@ namespace LetsCookApp.Views
         {
             App.AppSetup.HomeViewModel.IsMenuListPresented = true;
         }
+        private void Search_Tapped(object sender, EventArgs e)
+        {
+            var page = new SearchView();
+
+            Rg.Plugins.Popup.Services.PopupNavigation.PushAsync(page);
+        }
     }
 }

@@ -17,7 +17,7 @@
           <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
           <ContentView.GestureRecognizers>
-            <!--<TapGestureRecognizer Tapped="Search_Tapped"/>-->
+            <TapGestureRecognizer Tapped="Search_Tapped"/>
           </ContentView.GestureRecognizers>
         </ContentView>
       </StackLayout>
@@ -39,19 +39,18 @@
           <RowDefinition Height="1"/>
           <RowDefinition Height="50"/>
           <RowDefinition Height="1"/>
-          <RowDefinition Height="50"/>
+          <RowDefinition Height="200"/>
           <RowDefinition Height="1"/>
          
         </Grid.RowDefinitions>
-        <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Name" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+        <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Name" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
         <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Email" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+        <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Email" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
         <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="Contact" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+        <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="Contact" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
         <BoxView Grid.Column="0" Grid.Row="5" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <local:CustomEntryRegular Grid.Column="0" Grid.Row="6" TextColor="Black" Placeholder="Query" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-        <BoxView Grid.Column="0" Grid.Row="7" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <local:PlaceholderEditor  Grid.Column="0" Grid.Row="6" TextColor="Black" Placeholder="Query" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         
       </Grid>
       <local:CustomButtonRegular  Text="SUBMIT" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,10,15,20" />

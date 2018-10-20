@@ -17,7 +17,7 @@
         <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
 
         <ContentView.GestureRecognizers>
-          <!--<TapGestureRecognizer Tapped="Search_Tapped"/>-->
+          <TapGestureRecognizer Tapped="Search_Tapped"/>
         </ContentView.GestureRecognizers>
       </ContentView>
     </StackLayout>

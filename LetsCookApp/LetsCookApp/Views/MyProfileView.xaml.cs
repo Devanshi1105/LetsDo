@@ -64,6 +64,12 @@ namespace LetsCookApp.Views
             TLine.IsVisible = FLine.IsVisible = ALine.IsVisible = false;
             grdTimeline.IsVisible = listFriends.IsVisible = grdAboutme.IsVisible = false;
         }
+        private void Search_Tapped(object sender, EventArgs e)
+        {
+            var page = new SearchView();
+
+            Rg.Plugins.Popup.Services.PopupNavigation.PushAsync(page);
+        }
     }
 
 

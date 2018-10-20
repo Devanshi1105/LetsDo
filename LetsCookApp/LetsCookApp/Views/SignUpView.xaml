@@ -7,13 +7,13 @@
    
         <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                <ContentView HorizontalOptions="Start" VerticalOptions="Start">
-                    <Image Source="cross1" HorizontalOptions="Center" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+              <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+              <Image Source="cross1" HorizontalOptions="Center" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
                     <ContentView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Close_Tapped" />
                     </ContentView.GestureRecognizers>
                 </ContentView>
-                <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+                <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="10,10">
                     <local:CustomLabelLight Text="Sign In" TextColor="#ffffff" FontSize="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"  />
                   <ContentView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="SignIn_Tapped" />
@@ -47,20 +47,20 @@
                         <RowDefinition Height="1"/>
                         <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
-                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="BirthDay" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="BirthDay" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Gender" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Gender" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="UserName" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="4" TextColor="Black" Placeholder="UserName" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
                     <BoxView Grid.Column="0" Grid.Row="5" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="6" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="6" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <BoxView Grid.Column="0" Grid.Row="7" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="8" TextColor="Black" Placeholder="Occupation" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="8" TextColor="Black" Placeholder="Occupation" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <BoxView Grid.Column="0" Grid.Row="9" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="10" TextColor="Black" Placeholder="Mobile" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="10" TextColor="Black" Placeholder="Mobile" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <BoxView Grid.Column="0" Grid.Row="11" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="12" TextColor="Black" Placeholder="About Me" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="12" TextColor="Black" Placeholder="About Me" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
                 </Grid>
                 <local:CustomButtonRegular  Text="CREATE MY ACCOUNT" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,10,15,20" Clicked="Create_Clicked"/>

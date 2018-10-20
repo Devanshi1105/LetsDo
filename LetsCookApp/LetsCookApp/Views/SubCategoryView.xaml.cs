@@ -31,7 +31,9 @@ namespace LetsCookApp.Views
         }
         private void Search_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SearchView());
+            var page = new SearchView();
+
+            Rg.Plugins.Popup.Services.PopupNavigation.PushAsync(page);
         }
         private void Menu_Tapped(object sender, EventArgs e)
         {

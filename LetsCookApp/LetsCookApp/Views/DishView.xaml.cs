@@ -105,7 +105,9 @@ namespace LetsCookApp.Views
         }
         private void Search_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SearchView());
+            var page = new SearchView();
+
+            Rg.Plugins.Popup.Services.PopupNavigation.PushAsync(page);
         }
         private void lst1_ItemTapped(object sender, ItemTappedEventArgs e)
         {

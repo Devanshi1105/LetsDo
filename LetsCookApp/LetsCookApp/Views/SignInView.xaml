@@ -26,7 +26,7 @@
                         <TapGestureRecognizer Tapped="Close_Tapped"/>
               </ContentView.GestureRecognizers>
             </ContentView>
-            <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+            <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="10,10">
               <local:CustomLabelLight Text="Create my account" TextColor="#ffffff" FontSize="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"  />
               <ContentView.GestureRecognizers>
                 <TapGestureRecognizer Tapped="CreateAccount_Tapped" />
@@ -52,9 +52,9 @@
                     <RowDefinition Height="40"/>
                     
                 </Grid.RowDefinitions>
-                <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Username" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Username" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                 <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                
             </Grid>
             <local:CustomButtonRegular  Text="SIGN IN" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center"  Margin="15,10,15,20" Clicked="SignIn_Clicked"/>

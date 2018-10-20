@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,16 +11,23 @@ using Xamarin.Forms.Xaml;
 namespace LetsCookApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SearchView : ContentPage
+    public partial class SearchView : Rg.Plugins.Popup.Pages.PopupPage
+
     {
         public SearchView()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-        private void Search_Tapped(object sender, EventArgs e)
+        private async void Menu_Tapped(object sender, EventArgs e)
         {
-            Navigation.PopToRootAsync();
+            await PopupNavigation.PopAsync();
+            App.AppSetup.HomeViewModel.IsMenuListPresented = true;
+        }
+
+        private async void OnClose(object sender, EventArgs e)
+        {
+            await PopupNavigation.PopAsync();
         }
     }
 }
