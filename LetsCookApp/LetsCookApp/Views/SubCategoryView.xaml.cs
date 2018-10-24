@@ -20,6 +20,8 @@ namespace LetsCookApp.Views
                 new SubCategory {foodIcon = "cacke.png" ,DishName = "Cake Recipes", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "9 MIn", servingIcon = "icon.png", Servings="6 Servings",ingrendIcon="icon.png" , Ingrendients="14 Ingredients" ,plusIcon="icon.png"},
                 new SubCategory {foodIcon = "donat.png" ,DishName = "Donut Recipe", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "30 MIn", servingIcon = "icon.png", Servings="4 Servings",ingrendIcon="icon.png" , Ingrendients="8 Ingredients" ,plusIcon="icon.png"},
                 new SubCategory {foodIcon = "ruge.png" ,DishName = "Rugelach Recipe", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "15 MIn", servingIcon = "icon.png", Servings="4 Servings",ingrendIcon="icon.png" , Ingrendients="7 Ingredients" ,plusIcon="icon.png"},
+                new SubCategory {foodIcon = "cacke.png" ,DishName = "Cake Recipes", likeIcon = "icon.png" ,timeIcon = "icon.png" ,Time = "9 MIn", servingIcon = "icon.png", Servings="6 Servings",ingrendIcon="icon.png" , Ingrendients="14 Ingredients" ,plusIcon="icon.png"},
+
             };
 
             //RaisePropertyChanged(() => ListAvailableAward);

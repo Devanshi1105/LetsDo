@@ -23,7 +23,7 @@
                 </ContentView>
             </StackLayout>
         <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid HorizontalOptions="FillAndExpand" RowSpacing="0" VerticalOptions="FillAndExpand">
             <Grid.ColumnDefinitions>
               <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
