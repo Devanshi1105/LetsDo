@@ -23,7 +23,7 @@
     </StackLayout>
 
 
-    <StackLayout Orientation="Vertical" HeightRequest="120"  Padding="10,10" HorizontalOptions="FillAndExpand" BackgroundColor="#e74c3c" Spacing="0" VerticalOptions="StartAndExpand" Margin="10">
+    <StackLayout Orientation="Vertical" HeightRequest="110"  Padding="10,10" HorizontalOptions="FillAndExpand" BackgroundColor="#e74c3c" Spacing="0" VerticalOptions="StartAndExpand" Margin="10">
       <Image x:Name="whtlock" Source="man.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
 
     </StackLayout>
@@ -36,8 +36,7 @@
 
     </StackLayout>
 
-    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start"
- BackgroundColor="Transparent" RowSpacing="0" >
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent" RowSpacing="0" >
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
         <ColumnDefinition Width="*"/>
@@ -45,7 +44,7 @@
         <ColumnDefinition Width="*"/>
       </Grid.ColumnDefinitions>
       <Grid.RowDefinitions>
-        <RowDefinition Height="50"/>
+        <RowDefinition Height="40"/>
         <RowDefinition Height="2"/>
       </Grid.RowDefinitions>
 
@@ -103,16 +102,15 @@
           <StackLayout Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1"  HeightRequest="50" HorizontalOptions="StartAndExpand"  Spacing="0" VerticalOptions="CenterAndExpand" >
             <local:CustomLabelRegular Text="Santosh Kundkar" TextColor="Black" FontSize="15" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
             </local:CustomLabelRegular>
-            <local:CustomLabelRegular Text="10 Oct 2018" TextColor="Black" FontSize="12"    HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+            <local:CustomLabelRegular Text="10 Oct 2018" TextColor="Black" FontSize="12"    HorizontalOptions="StartAndExpand" VerticalOptions="Center" FontAttributes="Italic">
             </local:CustomLabelRegular>
-
           </StackLayout>
          
           <Image  Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" Source="Dosa.png" Aspect="AspectFill"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-
-        </Grid>
+                   
+           </Grid>
         
-          <Grid x:Name="grdAboutme" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#ffffff" Margin="10,10,0,10" Padding="8">
+          <Grid x:Name="grdAboutme" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#ffffff" Margin="10,0,0,10" Padding="8,0">
           <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
           </Grid.ColumnDefinitions>
@@ -122,12 +120,20 @@
             <RowDefinition Height="*"/>
 
           </Grid.RowDefinitions>
+                    <Frame Grid.Column="0" Grid.Row="0" HasShadow="True" BackgroundColor="Transparent" Padding="12,10,12,0" IsClippedToBounds="True" OutlineColor="Black">
+                        
+                        <StackLayout  HeightRequest="50"  HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                            <Label  Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." TextColor="Black" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            
+                            <ContentView HorizontalOptions="Start" VerticalOptions="End" Padding="5,0" BackgroundColor="#d9d9d9">
+                                <local:CustomLabelRegular Text="Read All" TextColor="Black" FontSize="15" FontAttributes ="Bold"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
 
-            <StackLayout Grid.Column="0" Grid.Row="0" HeightRequest="50"  HorizontalOptions="Center" VerticalOptions="Center">
-              <Label  Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." TextColor="Black" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
-            </StackLayout>
-            
-             <!--<StackLayout Grid.Column="0" Orientation="Horizontal" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            </ContentView>
+                        </StackLayout>
+                       
+                    </Frame>
+
+                    <!--<StackLayout Grid.Column="0" Orientation="Horizontal" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
               <Label  Text="Read All" TextColor="Black" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center"/>
              <Image   Source="man.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
 

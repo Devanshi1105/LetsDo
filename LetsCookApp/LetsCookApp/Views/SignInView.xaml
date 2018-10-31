@@ -6,60 +6,47 @@
 
     <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
         <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                <ContentView HorizontalOptions="Start" VerticalOptions="Start">
-                    <Image Source="cross" HorizontalOptions="Center" VerticalOptions="Center"/>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" >
+                <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+                    <Image Source="cross1" HorizontalOptions="Center" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+                    <ContentView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Close_Tapped"/>
+                    </ContentView.GestureRecognizers>
                 </ContentView>
-                <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+                <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="10,10">
                     <local:CustomLabelLight Text="Create my account" TextColor="#ffffff" FontSize="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"  />
                     <ContentView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="CreateAccount_Tapped" />
                     </ContentView.GestureRecognizers>
-                </ContentView> 
-               
-            </StackLayout>-->
-
-          <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" >
-            <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
-              <Image Source="cross1" HorizontalOptions="Center" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
-              <ContentView.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Close_Tapped"/>
-              </ContentView.GestureRecognizers>
-            </ContentView>
-            <ContentView HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="10,10">
-              <local:CustomLabelLight Text="Create my account" TextColor="#ffffff" FontSize="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"  />
-              <ContentView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="CreateAccount_Tapped" />
-              </ContentView.GestureRecognizers>
-            </ContentView>
-            
-          </StackLayout>
-          <StackLayout Orientation="Vertical"  HorizontalOptions="CenterAndExpand" Spacing="0" VerticalOptions="Center" Margin="0,40,0,0">
-                <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-              <local:CustomLabelRegular Text="Home Made Food" TextColor="#ffffff" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
-              </local:CustomLabelRegular>
-              <local:CustomLabelRegular Text="Veg Only" TextColor="#ffffff" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
-              </local:CustomLabelRegular>
-
+                </ContentView>
             </StackLayout>
-             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Opacity="0.8" Margin="15,0" Padding="8">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="1"/>
-                    <RowDefinition Height="40"/>
+
+            <StackLayout Orientation="Vertical"  HorizontalOptions="CenterAndExpand" Spacing="2" VerticalOptions="Center" Margin="0,40,0,0">
+                <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <local:CustomLabelRegular Text="Home Made Food" TextColor="White" FontSize="Large" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                <local:CustomLabelRegular Text="Veg Only" TextColor="White" FontSize="Small"   HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <Frame  HasShadow="True" BackgroundColor="Transparent" Padding="12,10,12,0" IsClippedToBounds="True" OutlineColor="Black">
+                <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Opacity="0.7" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Username" PlaceholderColor="Gray" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
                     
-                </Grid.RowDefinitions>
-                <local:CustomEntryRegular Grid.Column="0" Grid.Row="0" TextColor="Black" Placeholder="Username" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Password" PlaceholderColor="#9A9A9A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-               
-            </Grid>
-            <local:CustomButtonRegular  Text="SIGN IN" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center"  Margin="15,10,15,20" Clicked="SignIn_Clicked"/>
+                    <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                    <local:CustomEntryRegular Grid.Column="0" Grid.Row="2" TextColor="Black" Placeholder="Password" PlaceholderColor="Gray" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+                </Grid>
+            </Frame>
+            <local:CustomButtonRegular  Text="SIGN IN" TextColor="White" FontSize="18"  BorderRadius="5" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center"  Margin="12,10,12,20" Clicked="SignIn_Clicked"/>
             <ContentView  HorizontalOptions="Center" VerticalOptions="Start">
-                <local:CustomLabelRegular Text="Forgot Password?" TextColor="#ffffff" FontSize="16"   HorizontalOptions="Center" VerticalOptions="Center"/>
+                <local:CustomLabelRegular Text="Forgot Password?" TextColor="White" FontSize="20"   HorizontalOptions="Center" VerticalOptions="Center"/>
             </ContentView>
         </StackLayout>
     </ScrollView>

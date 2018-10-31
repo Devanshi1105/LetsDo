@@ -2,48 +2,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
-             x:Class="LetsCookApp.Views.SignInSignUpView"  BackgroundImage="newback.jpg" >
-    
-  <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" >
-    <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+             x:Class="LetsCookApp.Views.SignInSignUpView" BackgroundImage="newback.jpg">
 
-      <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="35">
-
-        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="10">
-          <Grid.RowDefinitions>
-
+    <Grid  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="10,35,10,35" RowSpacing="10">
+        <Grid.RowDefinitions>
             <RowDefinition Height="110"/>
-            <RowDefinition Height="120"/>
+            <RowDefinition Height="130"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
-          </Grid.RowDefinitions>
-          <Grid.ColumnDefinitions>
-
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="15"/>
-          </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Column="0"  Grid.Row="1" Spacing="2" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" >
+            <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="70" WidthRequest="70" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <local:CustomLabelRegular Text="Home Made Food" TextColor="White" FontSize="Medium" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center"/>
+            <local:CustomLabelRegular Text="Veg Only" TextColor="White" FontSize="Small"  HorizontalOptions="Center" VerticalOptions="Center"/>
+        </StackLayout>
 
-         
-          <StackLayout Grid.Column="0"  Grid.Row="1" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="5" >
-            <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-          <local:CustomLabelRegular Text="Home Made Food" TextColor="#ffffff" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Center" VerticalOptions="Center">
-             </local:CustomLabelRegular>
-           <local:CustomLabelRegular Text="Veg Only" TextColor="#ffffff" FontSize="12" FontAttributes ="Bold"   HorizontalOptions="Center" VerticalOptions="Center">
-             </local:CustomLabelRegular>
-           
-          </StackLayout>
-                    <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Text="CREATE MY ACCOUNT" TextColor="#e74c3c" FontSize="18" HeightRequest="50" BorderRadius="25" BackgroundColor="#fefefe" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="Create_Clicked" />
-          <Button Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Text="SIGN IN" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="25" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="Signin_Clicked" />
-          <ContentView Grid.Column="0" Grid.Row="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <local:CustomLabelRegular Text="Forgot Password?" TextColor="#ffffff" FontSize="16"   HorizontalOptions="Center" VerticalOptions="Center">
-             </local:CustomLabelRegular>
-           
-          </ContentView>
-        </Grid>
-      </StackLayout>
+        <local:CustomButtonRegular Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Text="CREATE MY ACCOUNT"  TextColor="#e74c3c" FontSize="18" BorderRadius="5" BackgroundColor="#fefefe" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="Create_Clicked" />
+        
+        <local:CustomButtonRegular Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Text="SIGN IN" TextColor="#fefefe" FontSize="18" BorderRadius="5" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="Signin_Clicked" />
 
-
-    </ScrollView>
-  </StackLayout>
+        <ContentView Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <local:CustomLabelRegular Text="Forgot Password?" TextColor="White" FontSize="20"   HorizontalOptions="Center" VerticalOptions="Center"/>
+        </ContentView>
+    </Grid>
 </ContentPage>

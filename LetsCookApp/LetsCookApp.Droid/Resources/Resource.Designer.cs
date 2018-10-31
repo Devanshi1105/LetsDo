@@ -2401,107 +2401,110 @@ namespace LetsCookApp.Droid
 			// aapt resource value: 0x7f0200ca
 			public const int NoOnion = 2130837706;
 			
-			// aapt resource value: 0x7f0200ec
-			public const int notification_template_icon_bg = 2130837740;
+			// aapt resource value: 0x7f0200ed
+			public const int notification_template_icon_bg = 2130837741;
 			
 			// aapt resource value: 0x7f0200cb
 			public const int overlay = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int Paneer = 2130837708;
+			public const int overlay1 = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int pc = 2130837709;
+			public const int Paneer = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int picture = 2130837710;
+			public const int pc = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int Popular = 2130837711;
+			public const int picture = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int poultry = 2130837712;
+			public const int Popular = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int privacy = 2130837713;
+			public const int poultry = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int Profile = 2130837714;
+			public const int privacy = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int profile1 = 2130837715;
+			public const int Profile = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int recipes = 2130837716;
+			public const int profile1 = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int report = 2130837717;
+			public const int recipes = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int Rice = 2130837718;
+			public const int report = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int roundedbg = 2130837719;
+			public const int Rice = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int roundedbgdark = 2130837720;
+			public const int roundedbg = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ruge = 2130837721;
+			public const int roundedbgdark = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int seafood = 2130837722;
+			public const int ruge = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int search = 2130837723;
+			public const int seafood = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int serving = 2130837724;
+			public const int search = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int Settings = 2130837725;
+			public const int serving = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int share = 2130837726;
+			public const int Settings = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ShareApp = 2130837727;
+			public const int share = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int sharet = 2130837728;
+			public const int ShareApp = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int Shopping = 2130837729;
+			public const int sharet = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int shrimp = 2130837730;
+			public const int Shopping = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int sms = 2130837731;
+			public const int shrimp = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int Snacks = 2130837732;
+			public const int sms = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int snapper = 2130837733;
+			public const int Snacks = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int splash = 2130837734;
+			public const int snapper = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int Suggest = 2130837735;
+			public const int splash = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int time = 2130837736;
+			public const int Suggest = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int twitter = 2130837737;
+			public const int time = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int user = 2130837738;
+			public const int twitter = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int whatsapp = 2130837739;
+			public const int user = 2130837739;
+			
+			// aapt resource value: 0x7f0200ec
+			public const int whatsapp = 2130837740;
 			
 			static Drawable()
 			{

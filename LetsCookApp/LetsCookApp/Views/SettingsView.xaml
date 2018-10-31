@@ -3,93 +3,99 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
              x:Class="LetsCookApp.Views.SettingsView">
-  <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-    <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
-        <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
-          <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
-          <ContentView.GestureRecognizers>
-            <TapGestureRecognizer Tapped="Menu_Tapped"/>
-          </ContentView.GestureRecognizers>
-        </ContentView>
-        <local:CustomLabelLight Text="Settings" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
-        <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
-          <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
-
-          <ContentView.GestureRecognizers>
-            <TapGestureRecognizer Tapped="Search_Tapped"/>
-          </ContentView.GestureRecognizers>
-        </ContentView>
-      </StackLayout>
-      <local:CustomLabelRegular Text="Main" TextColor="#e74c3c" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Start" Margin="10,0,0,0" VerticalOptions="Center">
-      </local:CustomLabelRegular>
-
-      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="10,0" Padding="8">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="40"/>
-          <RowDefinition Height="1"/>
-          <RowDefinition Height="40"/>
-          <RowDefinition Height="1"/>
-          <RowDefinition Height="40"/>
-
-        </Grid.RowDefinitions>
-        <StackLayout Grid.Column="0"  Grid.Row="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
-          <Image  Source="profile1.png" Aspect="AspectFit" HeightRequest="25" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-          <local:CustomLabelRegular Text="My Profile Settings" TextColor="Black" FontSize="12" FontAttributes ="Bold"  HorizontalOptions="StartAndExpand" VerticalOptions="Center">
-          </local:CustomLabelRegular>
-          
-        </StackLayout>
-         <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <StackLayout Grid.Column="0"  Grid.Row="2" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
-                    <Image  Source="edit.png" Aspect="AspectFit" HeightRequest="25" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-          <local:CustomLabelRegular Text="Edit Profile Picture" TextColor="Black" FontSize="12" FontAttributes ="Bold"  HorizontalOptions="StartAndExpand" VerticalOptions="Center">
-          </local:CustomLabelRegular>
-
-        </StackLayout>
-        <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <StackLayout Grid.Column="0"  Grid.Row="4" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
-           <local:CustomLabelRegular Text="Push Notification" TextColor="Black" FontSize="12" FontAttributes ="Bold"  HorizontalOptions="StartAndExpand" VerticalOptions="Center">
-          </local:CustomLabelRegular>
-          <Switch HorizontalOptions="StartAndExpand" VerticalOptions="LayoutOptions.CenterAndExpand"  />
-        </StackLayout>
-      </Grid>
-
-      <local:CustomLabelRegular Text="Support" TextColor="#e74c3c" FontSize="16" FontAttributes ="Bold"  HorizontalOptions="Start" Margin="10,0,0,0" VerticalOptions="Center">
-      </local:CustomLabelRegular>
-
-      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="10,0" Padding="8">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="40"/>
-          <RowDefinition Height="1"/>
-          <RowDefinition Height="40"/>
-          <RowDefinition Height="1"/>
-          <RowDefinition Height="40"/>
-
-        </Grid.RowDefinitions>
-        <StackLayout Grid.Column="0"  Grid.Row="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
-                    <Image  Source="report.png" Aspect="AspectFit" HeightRequest="25" WidthRequest="25" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand"/>
-          <local:CustomLabelRegular Text="Report a Problem" TextColor="Black" FontSize="12" FontAttributes ="Bold"  HorizontalOptions="StartAndExpand" VerticalOptions="Center">
-          </local:CustomLabelRegular>
-
-        </StackLayout>
-        <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-        <StackLayout Grid.Column="0"  Grid.Row="2" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
-                    <Image  Source="privacy.png" Aspect="AspectFit" HeightRequest="25" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-          <local:CustomLabelRegular Text="Privacy Policy" TextColor="Black" FontSize="12" FontAttributes ="Bold"  HorizontalOptions="StartAndExpand" VerticalOptions="Center">
-          </local:CustomLabelRegular>
-
-        </StackLayout>
-        <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+  
+    <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" BackgroundColor="White" Spacing="0" VerticalOptions="FillAndExpand">
         
-      </Grid>
+          <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
+            <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+                <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Menu_Tapped"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+            <local:CustomLabelLight Text="Settings" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+            <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
+                <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Search_Tapped"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+        </StackLayout>
+        <ContentView HorizontalOptions="FillAndExpand" HeightRequest="50" BackgroundColor="#d9d9d9" VerticalOptions="Center" Padding="25,0">            
+            <local:CustomLabelRegular Text="Main" TextColor="#e74c3c" FontSize="20" FontAttributes ="Bold"  HorizontalOptions="Start" Margin="0,0,0,0" VerticalOptions="Center"/>
+        </ContentView>
+
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="White" Margin="10,0" Padding="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="40"/>
+
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0"  Grid.Row="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
+                <Image  Source="profile1.png" Aspect="AspectFit" HeightRequest="25" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                <local:CustomLabelRegular Text="My Profile Settings" TextColor="Black" FontSize="16"  HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                </local:CustomLabelRegular>
+
+            </StackLayout>
+            <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            <StackLayout Grid.Column="0"  Grid.Row="2" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
+                <Image  Source="edit.png" Aspect="AspectFit" HeightRequest="25" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                <local:CustomLabelRegular Text="Edit Profile Picture" TextColor="Black" FontSize="16"   HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                </local:CustomLabelRegular>
+
+            </StackLayout>
+            <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            <StackLayout Grid.Column="0"  Grid.Row="4" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
+                <local:CustomLabelRegular Text="Push Notification" TextColor="Black" FontSize="16" HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                </local:CustomLabelRegular>
+                <Switch HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+            </StackLayout>
+        </Grid>
+
+    
+      
+        <ContentView HorizontalOptions="FillAndExpand" HeightRequest="50" BackgroundColor="#d9d9d9" VerticalOptions="Center" Padding="25,0">            
+            <local:CustomLabelRegular Text="Support" TextColor="#e74c3c" FontSize="20" FontAttributes ="Bold"  HorizontalOptions="Start" Margin="0,0,0,0" VerticalOptions="Center"/>
+        </ContentView>
+      
+      
+
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#ffffff" Margin="10,0" Padding="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="40"/>
+
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0"  Grid.Row="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
+                <Image  Source="report.png" Aspect="AspectFit" HeightRequest="25" WidthRequest="25" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand"/>
+                <local:CustomLabelRegular Text="Report a Problem" TextColor="Black" FontSize="16"   HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                </local:CustomLabelRegular>
+
+            </StackLayout>
+            <BoxView Grid.Column="0" Grid.Row="1" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            <StackLayout Grid.Column="0"  Grid.Row="2" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5" VerticalOptions="StartAndExpand" Margin="5" >
+                <Image  Source="privacy.png" Aspect="AspectFit" HeightRequest="25" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                <local:CustomLabelRegular Text="Privacy Policy" TextColor="Black" FontSize="16" HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                </local:CustomLabelRegular>
+
+            </StackLayout>
+            <BoxView Grid.Column="0" Grid.Row="3" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+        </Grid>
 
 
     </StackLayout>
-  </ScrollView>
 </ContentPage>

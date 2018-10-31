@@ -22,7 +22,7 @@
         </ContentView>
       </StackLayout>
 
-      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="White">
+      <Grid HorizontalOptions="FillAndExpand" Padding="10,0" VerticalOptions="FillAndExpand" BackgroundColor="White">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>

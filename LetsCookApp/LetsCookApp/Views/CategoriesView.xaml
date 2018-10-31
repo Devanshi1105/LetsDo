@@ -5,7 +5,7 @@
              x:Class="LetsCookApp.Views.CategoriesView">
 
    
-        <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout x:Name="MainStack" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
                 <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
                     <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
@@ -22,7 +22,7 @@
                   </ContentView.GestureRecognizers>
                 </ContentView>
             </StackLayout>
-        <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
             <Grid HorizontalOptions="FillAndExpand" RowSpacing="0" VerticalOptions="FillAndExpand">
             <Grid.ColumnDefinitions>
               <ColumnDefinition Width="*"/>

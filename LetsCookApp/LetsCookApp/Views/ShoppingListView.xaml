@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
-             x:Class="LetsCookApp.Views.ShoppingListView">
-  <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+             x:Class="LetsCookApp.Views.ShoppingListView" >
+    <StackLayout x:Name="MainStack" Spacing="0"  BackgroundColor="#f0eff5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
       <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
         <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
@@ -20,17 +20,17 @@
         </ContentView.GestureRecognizers>
       </ContentView>
     </StackLayout>
-    <Grid  BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid RowSpacing="0" BackgroundColor="#d9d9d9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
       <Grid.RowDefinitions>
-        <RowDefinition Height="30" />
+        <RowDefinition Height="40" />
         <RowDefinition Height="400" />
         <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
 
-      <ContentView Grid.Row="0" BackgroundColor="#f0eff5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-        <Label  Text="PAN SEARED RED SNAPPER" TextColor="#e74c3c"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
+            <ContentView Grid.Row="0"  BackgroundColor="#d9d9d9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Label Margin="10,0" Text="PAN SEARED RED SNAPPER" FontSize="18" TextColor="#e74c3c"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
       </ContentView>
-      <local:CustomListView Grid.Row="1" x:Name="masterMenuList" ItemsSource="{Binding MenuItemList}"  RowHeight="80" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None" BackgroundColor="Transparent" >
+      <local:CustomListView Grid.Row="1" x:Name="masterMenuList" ItemsSource="{Binding MenuItemList}"  RowHeight="80" HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorVisibility="None" BackgroundColor="White" >
         <local:CustomListView.ItemTemplate>
           <DataTemplate>
             <local:CustomListViewCell>
@@ -38,31 +38,15 @@
 
                 <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" VerticalOptions="StartAndExpand" Margin="5">
                   <Image Source="{Binding imgsource}" Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="30" WidthRequest="30"/>
-                  <local:CustomLabelRegular Text="{Binding Name}" TextColor="Black" FontSize="15" FontAttributes ="Bold"   VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+                  <local:CustomLabelRegular Text="{Binding Name}" TextColor="Black" FontSize="15"   VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
                 </StackLayout>
               </local:CustomListViewCell.View>
             </local:CustomListViewCell>
           </DataTemplate>
         </local:CustomListView.ItemTemplate>
       </local:CustomListView>
-      <!--<ListView Grid.Row="1" x:Name="lst1" HasUnevenRows="True" >
-        <ListView.ItemTemplate>
-          <DataTemplate>
-            <ViewCell>
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding imgsource}" HeightRequest="30" WidthRequest="50" HorizontalOptions="Start"/>
-
-                <StackLayout Orientation="Vertical">
-                  <Label Text="{Binding Name}" Font="18"/>
-                  --><!--<Label Text="{Binding Num}" TextColor="Gray"/>--><!--
-                </StackLayout>
-              </StackLayout>
-            </ViewCell>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>-->
-
-    
+      
     </Grid>
-  </StackLayout>
+  
+    </StackLayout>
   </ContentPage>
