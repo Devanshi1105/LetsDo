@@ -5,7 +5,7 @@
                xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
              x:Class="LetsCookApp.Views.SearchView" Title="Search"  BackgroundColor="Transparent">
 
-  <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+  <StackLayout x:Name="MainStack" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="50" BackgroundColor="Black">
       <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
         <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
