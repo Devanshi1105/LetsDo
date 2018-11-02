@@ -41,7 +41,7 @@ namespace LetsCookApp
            // page = new Main();
            // Current.MainPage = page;
              appSetup.LoginViewModel.GetAllCategory();
-             MainPage = new NavigationPage(new MyProfileView());
+             MainPage = new NavigationPage(new DishView());
         }
 
        

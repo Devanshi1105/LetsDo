@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
              x:Class="LetsCookApp.Views.AboutUsView">
-  <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+  
     <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
       <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
         <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
@@ -22,6 +22,7 @@
         </ContentView>
       </StackLayout>
 
+      <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
       <Grid HorizontalOptions="FillAndExpand" Padding="10,0" VerticalOptions="FillAndExpand" BackgroundColor="White">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="*"/>
@@ -31,28 +32,28 @@
           <RowDefinition Height="55"/>
           <RowDefinition Height="20"/>
          <RowDefinition Height="40"/>
-        <RowDefinition Height="80"/>
-         <RowDefinition Height="80"/>
+        <RowDefinition Height="90"/>
+         <RowDefinition Height="150"/>
           <RowDefinition Height="55"/>
-        <RowDefinition Height="*"/>
+        <RowDefinition Height="130"/>
         <RowDefinition Height="*"/>
         <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackLayout Orientation="Horizontal" Grid.Row="0" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
-          <local:CustomLabelLight Text="Home Made Food" TextColor="#e74c3c" FontSize="20" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
-          <local:CustomLabelLight Text="Veg Only" TextColor="Black" FontSize="18" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+        <StackLayout Orientation="Horizontal" Grid.Row="0" Spacing="3" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+          <local:CustomLabelLight Text="Home Made Food" TextColor="#e74c3c" FontSize="20" HorizontalOptions="Start" VerticalOptions="Center"  />
+          <local:CustomLabelLight Text="Veg Only" TextColor="Black" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"  />
 
         </StackLayout>
         <StackLayout Orientation="Vertical" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
-          <local:CustomLabelLight Text="We offer vegetarian Recipes in English language 
+          <local:CustomLabelLight XAlign="Start" Text="We offer vegetarian Recipes in English language 
 because we feel that you can learn new recipes and
-dishes only in the language that you speak at home."  TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+dishes only in the language that you speak at home."  TextColor="Black" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
 
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" Grid.Row="2" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
-          <local:CustomLabelLight Text="Home Made Food (Veg Only)" TextColor="#e74c3c" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
-          <local:CustomLabelLight Text="Is a Global Platform for" TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+        <StackLayout Orientation="Horizontal" Grid.Row="2" Spacing="0"  HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+          <local:CustomLabelLight Text="Home Made Food (Veg Only)" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+          <local:CustomLabelLight Text="Is a Global Platform for" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
         </StackLayout>
  <local:CustomLabelLight Text="Indian community to share your Cooking Art and food 
 to the world." Grid.Row="3"  TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
@@ -60,34 +61,55 @@ to the world." Grid.Row="3"  TextColor="Black" FontSize="15" HorizontalOptions="
       <local:CustomLabelLight Text="With our unique collection of Recipes in English, you
 don't have to browse the web every time you want to 
 cook some food.Our app is going to be your one-stop solution for all cokking ideas.
-In our app, you will find-" Grid.Row="4"  TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+In our app, you will find-" Grid.Row="4"  TextColor="Black" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
 
-     <StackLayout Orientation="Horizontal" Grid.Row="5" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
-          <local:CustomLabelLight Text="+ Indian Recipes in English language
-+ Indian Food Recipes in English
-+ Fast Food recipes in English
-+ Punjabi Recipes in English
-+ Chines Recipes in English
-+ South Indian Recipes in English, and many 
-  more...." TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+     <StackLayout Orientation="Vertical" Grid.Row="5" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#d9d9d9">
+       <StackLayout Orientation="Horizontal"   HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+         <local:CustomLabelLight Text="+" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+         <local:CustomLabelLight Text="Indian Recipes in English language" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+       </StackLayout>
+       <StackLayout Orientation="Horizontal"   HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+         <local:CustomLabelLight Text="+" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+         <local:CustomLabelLight Text="Indian Food Recipes in English" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+       </StackLayout>
+       <StackLayout Orientation="Horizontal"   HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+         <local:CustomLabelLight Text="+" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+         <local:CustomLabelLight Text="Fast Food recipes in English" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+       </StackLayout>
+       <StackLayout Orientation="Horizontal"   HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+         <local:CustomLabelLight Text="+" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+         <local:CustomLabelLight Text="Punjabi Recipes in English" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+       </StackLayout>
+       <StackLayout Orientation="Horizontal"   HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+         <local:CustomLabelLight Text="+" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+         <local:CustomLabelLight Text="Chines Recipes in English" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+       </StackLayout>
+       <StackLayout Orientation="Horizontal"   HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+         <local:CustomLabelLight Text="+" TextColor="#e74c3c" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+         <local:CustomLabelLight Text="South Indian Recipes in English, and many" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+       </StackLayout>
+       <local:CustomLabelLight Text=" more...." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+       
         </StackLayout>
       
        <StackLayout Orientation="Horizontal" Grid.Row="6" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
           <local:CustomLabelLight Text="You can easily share the recipes with others
 through email,Facebook,Whatsapp, etc. directly
 from with in the app
-" TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+" TextColor="Black" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
         </StackLayout>
-       <StackLayout Orientation="Horizontal" Grid.Row="7" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
+       <StackLayout Orientation="Vertical" Grid.Row="7" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
           <local:CustomLabelLight Text="Our unique layout based on different categories
 help you in easily finding your desired recipe
 without excessive search.
+" TextColor="Black" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+         <local:CustomLabelLight Text="
 Indian food stand for Food and Business.You can
 find Indian in Every Corner of the World. This
 Platform is a connecting medium for such food 
-lovers!" TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+lovers!" TextColor="Black" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
         </StackLayout>
-      <StackLayout Orientation="Horizontal" Grid.Row="8" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
+      <StackLayout Orientation="Horizontal" Grid.Row="8" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#d9d9d9">
           <local:CustomLabelLight Text="Ancient and Modern Research has proven this fact
 that 'Emotional State of food maker has a Great
 Impact on the Mind of the one who eats the Food.'
@@ -99,7 +121,7 @@ in you.We are a community driven platform to
 share what you have made today in your kitchen. 
 So go ahead and enjoy your Indian Recipes in 
 English lanhuage, and feel free to send us your suggestions.
-" TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+" TextColor="Black" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
         </StackLayout>
       
        <StackLayout Orientation="Horizontal" Grid.Row="9" Spacing="0" Padding="0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Transparent">
@@ -109,11 +131,11 @@ share your dishes on our platform along with your
 name. We strongly belive that your unique cooking
 art sholud be heighlighted to the whole world so that 
 everyone can benefit from your talent. 
-" TextColor="Black" FontSize="15" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+" TextColor="Black" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
         </StackLayout>
       </Grid>
 
-
+      </ScrollView>
     </StackLayout>
-  </ScrollView>
+  
 </ContentPage>
