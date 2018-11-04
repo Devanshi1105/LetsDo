@@ -178,12 +178,24 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.0.107\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="YoutubeApiLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Ext Dll\YoutubeApiLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="activity.cs" />
+    <Compile Include="Dependency\AndroidDevice_Android.cs" />
+    <Compile Include="Dependency\BroadcastMonitor.cs" />
+    <Compile Include="Dependency\Display_Android.cs" />
+    <Compile Include="Dependency\Network.cs" />
+    <Compile Include="Dependency\PhoneService_Android.cs" />
+    <Compile Include="Helper\MyGallery.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderer\CustomButtonBoldRenderer.cs" />
     <Compile Include="Renderer\CustomButtonRegularRenderer.cs" />
     <Compile Include="Renderer\CustomEntryRegularRenderer.cs" />
+    <Compile Include="Renderer\CustomImageGalleryRenderer.cs" />
     <Compile Include="Renderer\CustomLabelBoldRenderer.cs" />
     <Compile Include="Renderer\CustomLabelLightRenderer.cs" />
     <Compile Include="Renderer\CustomLabelLineSpacingRenderer.cs" />
@@ -460,6 +472,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\downarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ext Dll\YoutubeApiLibrary.dll" />
+    <AndroidResource Include="Resources\layout\Video.xml" />
+    <AndroidResource Include="Resources\layout\player.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

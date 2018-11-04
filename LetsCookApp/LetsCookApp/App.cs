@@ -6,6 +6,7 @@ using System.Text;
 using Xamarin.Forms;
 using CommonServiceLocator;
 using LetsCookApp.Views;
+using LetsCookApp.Services;
 
 namespace LetsCookApp
 {
@@ -13,15 +14,16 @@ namespace LetsCookApp
     {
         public static AppSetup AppSetup { get { return appSetup; } }
         private static AppSetup appSetup;
+        public static IDevice MobileDevice { get; set; }
 
-      
 
         public App()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<AppSetup>();
             appSetup = ServiceLocator.Current.GetInstance<AppSetup>();
-
+            var nativeDevice = DependencyService.Get<IDevice>();
+            MobileDevice = nativeDevice.CurrentDevice;
             // The root page of your application
             var content = new ContentPage
             {
@@ -41,7 +43,7 @@ namespace LetsCookApp
            // page = new Main();
            // Current.MainPage = page;
              appSetup.LoginViewModel.GetAllCategory();
-             MainPage = new NavigationPage(new SignInSignUpView());
+             MainPage = new NavigationPage(new DishView());
         }
 
        

@@ -2621,6 +2621,9 @@ namespace LetsCookApp.Droid
 			// aapt resource value: 0x7f07004f
 			public const int customPanel = 2131165263;
 			
+			// aapt resource value: 0x7f0700a0
+			public const int customViewContainer = 2131165344;
+			
 			// aapt resource value: 0x7f070058
 			public const int decor_content_parent = 2131165272;
 			
@@ -2906,8 +2909,8 @@ namespace LetsCookApp.Droid
 			// aapt resource value: 0x7f070013
 			public const int showTitle = 2131165203;
 			
-			// aapt resource value: 0x7f07009c
-			public const int sliding_tabs = 2131165340;
+			// aapt resource value: 0x7f07009d
+			public const int sliding_tabs = 2131165341;
 			
 			// aapt resource value: 0x7f07006c
 			public const int snackbar_action = 2131165292;
@@ -2966,8 +2969,8 @@ namespace LetsCookApp.Droid
 			// aapt resource value: 0x7f070048
 			public const int title_template = 2131165256;
 			
-			// aapt resource value: 0x7f07009d
-			public const int toolbar = 2131165341;
+			// aapt resource value: 0x7f07009e
+			public const int toolbar = 2131165342;
 			
 			// aapt resource value: 0x7f070032
 			public const int top = 2131165234;
@@ -2990,11 +2993,17 @@ namespace LetsCookApp.Droid
 			// aapt resource value: 0x7f070087
 			public const int volume_item_container = 2131165319;
 			
+			// aapt resource value: 0x7f07009f
+			public const int webView = 2131165343;
+			
 			// aapt resource value: 0x7f070022
 			public const int withText = 2131165218;
 			
 			// aapt resource value: 0x7f070015
 			public const int wrap_content = 2131165205;
+			
+			// aapt resource value: 0x7f07009c
+			public const int youtube_view = 2131165340;
 			
 			static Id()
 			{
@@ -3234,22 +3243,28 @@ namespace LetsCookApp.Droid
 			public const int notification_template_part_time = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int select_dialog_item_material = 2130903094;
+			public const int player = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int select_dialog_multichoice_material = 2130903095;
+			public const int select_dialog_item_material = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int select_dialog_singlechoice_material = 2130903096;
+			public const int select_dialog_multichoice_material = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int support_simple_spinner_dropdown_item = 2130903097;
+			public const int select_dialog_singlechoice_material = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int Tabbar = 2130903098;
+			public const int support_simple_spinner_dropdown_item = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int Toolbar = 2130903099;
+			public const int Tabbar = 2130903099;
+			
+			// aapt resource value: 0x7f03003c
+			public const int Toolbar = 2130903100;
+			
+			// aapt resource value: 0x7f03003d
+			public const int Video = 2130903101;
 			
 			static Layout()
 			{

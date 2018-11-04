@@ -84,6 +84,13 @@ namespace LetsCookApp.Views
             Name = "Nature Here, you can see that we used the ImageCell and set Binding. We set Binding of ‘Text’ with ‘Name’, ", Num = "56445905", imgsource = "checkmark.png",
         },
             };
+
+
+            var Urls = new System.Collections.ObjectModel.ObservableCollection<string>();
+            Urls.Add("https://www.youtube.com/watch?v=O-RgquKVTPE");
+            videoView.BackgroundColor = Color.Black;
+            videoView.ItemsSource = Urls;
+
         }
 
         private void lst2_ItemTapped(object sender, ItemTappedEventArgs e)
