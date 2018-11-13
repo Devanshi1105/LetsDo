@@ -477,6 +477,7 @@
     <Content Include="Ext Dll\YoutubeApiLibrary.dll" />
     <AndroidResource Include="Resources\layout\Video.xml" />
     <AndroidResource Include="Resources\layout\player.xml" />
+    <AndroidResource Include="Resources\drawable\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

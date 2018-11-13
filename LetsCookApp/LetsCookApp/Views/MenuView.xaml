@@ -61,7 +61,7 @@
             </local:CustomListView>
             
         </StackLayout>
-        <local:CustomButtonRegular  Text="SIGN OUT" TextColor="#fefefe" FontSize="18" HeightRequest="40" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center"  Margin="15,5,15,5" />
+        <!--<local:CustomButtonRegular  Text="SIGN OUT" TextColor="#fefefe" FontSize="18" HeightRequest="40" BorderRadius="1" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="Center"  Margin="15,5,15,5" />-->
 
         <!--<BoxView BackgroundColor="##e74c3c" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="30"/>-->
     </StackLayout>

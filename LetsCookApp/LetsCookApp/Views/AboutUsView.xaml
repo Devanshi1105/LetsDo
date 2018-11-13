@@ -3,8 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
              x:Class="LetsCookApp.Views.AboutUsView">
-  
-    <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+  <StackLayout x:Name="MainStack" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
+      <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
+        <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
+        <ContentView.GestureRecognizers>
+          <TapGestureRecognizer Tapped="Menu_Tapped"/>
+        </ContentView.GestureRecognizers>
+      </ContentView>
+      <local:CustomLabelLight Text="About the App" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+      <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
+        <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+      </ContentView>
+    </StackLayout>
+    <WebView x:Name="browser" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+  </StackLayout>
+
+  <!--<StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
       <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black">
         <ContentView HorizontalOptions="Start" VerticalOptions="Center" Padding="10,10">
           <Image Source="menu" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
@@ -136,6 +152,6 @@ everyone can benefit from your talent.
       </Grid>
 
       </ScrollView>
-    </StackLayout>
+    </StackLayout>-->
   
 </ContentPage>

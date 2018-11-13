@@ -12,13 +12,9 @@
                 </ContentView.GestureRecognizers>
             </ContentView>
             <local:CustomLabelLight Text="Share App" TextColor="#e74c3c" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
-            <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
-                <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center"/>
-
-                <ContentView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Search_Tapped"/>
-                </ContentView.GestureRecognizers>
-            </ContentView>
+          <ContentView HorizontalOptions="End" VerticalOptions="Center" Padding="10,10">
+            <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+          </ContentView>
         </StackLayout>
         <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" BackgroundColor="#e74c3c" Padding="0,10,0,0" Spacing="0" VerticalOptions="FillAndExpand" Margin="0,0,0,0">
             <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFit" HeightRequest="65" WidthRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
